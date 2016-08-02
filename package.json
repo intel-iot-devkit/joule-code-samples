@@ -1,0 +1,18 @@
+{
+  "name": "gt-demo",
+  "version": "1.0.0",
+  "description": "GT demo using BLE and IBM Bluemix",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.0.1",
+    "getmac": "^1.2.1",
+    "ibmiotf": "^0.2.22",
+    "noble": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wai Lun Poon",
+  "license": "MIT"
+}
