@@ -28,5 +28,5 @@ node index.js
 ## IBM Bluemix IoT
 Go to [IBM IoT Quickstart](https://quickstart.internetofthings.ibmcloud.com/#/) and enter your device ID to visualize your accelerometer data.
 
-![data visualizatin on IBM Bluemix IoT](bluemix.jpg)
+![data visualizatin on IBM Bluemix IoT](bluemix.png)
 
