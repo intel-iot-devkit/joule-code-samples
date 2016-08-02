@@ -1,7 +1,7 @@
 # BLE station with GT
 
 ## Introduction
-This BLE station example publishes acceleromtere data to the IBM Bluemix IoT cloud and also detects nearby BLE devices.
+This BLE station example publishes accelerometer data to the IBM Bluemix IoT cloud and also detects any nearby BLE devices.
 
 ## Setup
 * Ensure that your GT has been updated with the latest build of Ostro-GT
