@@ -16,7 +16,7 @@ Here is the hardware setup:
 ![GT setup](gt-setup.jpg)
 
 ## Running the code
-You can launch this project from XDK, or run it directly on your device:
+You can launch this project from XDK (after first importing it from XDK IoT Edition), or run it directly on your device:
 ```
 npm install
 node index.js
