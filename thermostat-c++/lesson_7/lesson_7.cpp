@@ -130,6 +130,10 @@ void control_thread(Devices &devices, float &highTemp, float &lowTemp) {
 			//Switch to Heater mode, and start heating until high temperature reached.
 			devices.unitControl(1, 1);
 		}
+		else if (devices.currentMode == -1 && devices.getTemp() >= highTemp && devices.status == 0) {
+			//AC on, not cooling, at max temperature.
+			devices.unitControl(-1, 1);
+		}
 		else if (devices.currentMode == 1 && devices.getTemp() < highTemp && devices.status == 1) {
 			//Heater on, heating, not yet to max temp.
 			//Do nothing.
@@ -142,6 +146,10 @@ void control_thread(Devices &devices, float &highTemp, float &lowTemp) {
 			//Heater on, 5 deg above maximum temperature
 			//Switch to AC mode, and start cooling until low temperature reached.
 			devices.unitControl(-1, 1);
+		}
+		else if (devices.currentMode == 1 && devices.getTemp() <= lowTemp && devices.status == 0) {
+			//Heater on, not heating, at minimum temperature.
+			devices.unitControl(1, 1);
 		}
 
 		sleep(5);
@@ -164,6 +172,16 @@ int main(int argc, char **argv) {
 		}
 		if (req.url_params.get("low") != nullptr) {
 			lowTemp = boost::lexical_cast<float>(req.url_params.get("low"));
+		}
+		if (req.url_params.get("coolSetting") != nullptr) {
+			string str = boost::lexical_cast<string>(req.url_params.get("coolSetting"));
+			if (str == "on") {
+				devices.currentMode = -1;
+			}
+			else if (str == "off") {
+				devices.currentMode = 0;
+				devices.unitControl(0,0);
+			}
 		}
 
 		crow::mustache::context ctx;
