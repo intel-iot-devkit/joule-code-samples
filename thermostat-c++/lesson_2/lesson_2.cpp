@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
 	gpio = new mraa::Gpio(100);	//Instantiate the GPIO object so that we can access the pin. (Pin 100)
 
 	if (gpio) { //If the instantiation was successful...
-		gpio->dir(mraa::DIR_OUT); //Set the pin as an output, as opposed to an output.
+		gpio->dir(mraa::DIR_OUT); //Set the pin as an output.
 		while (true) { //Begin an infinite loop. This will exit on pressing Ctrl+c, due to the event handler.
 			gpio->write(1); //gpio->write(n) writes the value "n" to the gpio object. If the value is 1, the output turns off, if it's 0 it turns on. This may seem counterintuitive, but it's called active-low.
 			sleep(1);		//sleep(n) is exactly what it says on the tin. It makes the program (or thread) sleep for n seconds.
