@@ -5,13 +5,14 @@
 
 class Relay {
 public:
+	Relay();
 	Relay(int pin);
 	~Relay();
 	void on();
 	void off();
 	bool getState();
 private:
-	mraa::gpio *relay;
+	mraa::Gpio *relay;
 };
 
 #endif

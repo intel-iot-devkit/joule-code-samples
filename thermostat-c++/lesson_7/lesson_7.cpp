@@ -34,6 +34,8 @@
 #include <jhd1313m1.hpp>
 #include <adc121c021.hpp>
 #include "relay.h"
+#include <thread>
+#include <functional>
 
 using namespace std;
 
@@ -75,25 +77,25 @@ struct Devices {
 		return temperature;
 	}
 
-	void unitControl(int mode, status) {
-		this.status = status;
+	void unitControl(int mode, int status) {
+		this->status = status;
 		switch (currentMode) {
 			case -1:
-				if (this.currentMode != -1) {
+				if (this->currentMode != -1) {
 					htr.off();
 					ac.on();
 					lcd->setColor(64, 64, 255);
 				}
 				break;
 			case 0:
-				if (this.currentMode != 0) {
+				if (this->currentMode != 0) {
 					htr.off();
 					ac.off();
 					lcd->setColor(128, 128, 128);
 				}
 				break;
 			case 1:
-				if (this.currentMode != 1) {
+				if (this->currentMode != 1) {
 					htr.on();
 					ac.off();
 					lcd->setColor(255, 64, 64);
@@ -102,12 +104,12 @@ struct Devices {
 			default:
 				break;
 		}
-		this.currentMode = mode;
+		this->currentMode = mode;
 	}
 
-}
+};
 
-void control_thread(&devices, &highTemp, &lowTemp) {
+void control_thread(Devices &devices, float &highTemp, float &lowTemp) {
 	while (true) {
 		ostringstream ss;
 		ss << "Hi: " << highTemp << " Lo: " << lowTemp;
@@ -148,14 +150,15 @@ void control_thread(&devices, &highTemp, &lowTemp) {
 
 Devices devices;
 float highTemp, lowTemp;
-crow::SimpleApp app;
-crow::mustache::set_base(".");
 
 int main(int argc, char **argv) {
-	std::thread t1(control_thread, ref(devices), ref(highTemp), ref(lowTemp));
+	crow::SimpleApp app;
+	crow::mustache::set_base(".");
+	
+	thread t1(control_thread, ref(devices), ref(highTemp), ref(lowTemp));
 
 	CROW_ROUTE(app, "/")
-	([]{
+	([](const crow::request &req){
 		if (req.url_params.get("high") != nullptr) {
 			highTemp = boost::lexical_cast<float>(req.url_params.get("high"));
 		}
