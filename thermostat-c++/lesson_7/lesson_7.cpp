@@ -79,7 +79,7 @@ struct Devices {
 
 	void unitControl(int mode, int status) {
 		this->status = status;
-		switch (currentMode) {
+		switch (mode) {
 			case -1:
 				if (this->currentMode != -1) {
 					htr.off();
