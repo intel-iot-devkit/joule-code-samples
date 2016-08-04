@@ -1,3 +1,6 @@
+#include "relay.h"
+#include <mraa.hpp>
+
 Relay::Relay() {}
 
 Relay::Relay(int pin) {
