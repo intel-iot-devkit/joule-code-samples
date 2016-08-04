@@ -1,5 +1,6 @@
 Relay::Relay(int pin) {
 	relay = new mraa::Gpio(pin);
+	relay->dir(mraa::DIR_OUT);
 }
 
 Relay::~Relay() {

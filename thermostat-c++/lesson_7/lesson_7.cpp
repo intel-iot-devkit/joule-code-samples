@@ -16,7 +16,7 @@
 * object within the same class. It allows you to contain code for specific
 * parts of a program in a single spot.
 
-* compile with -lupm-adc121c021 -lupm-i2clcd -pthread -lboost_system
+* compile with -lupm-adc121c021 -lupm-i2clcd -pthread -lboost_system -lmraa -std=c++11
 */
 
 #define LCD_ADDR (0x3E)
@@ -40,16 +40,16 @@ using namespace std;
 struct Devices {
 	upm::Jhd1313m1 *lcd;
 	upm::ADC121C021 *adc;
-	upm::GroveRelay *ac;
-	upm::GroveRelay *htr;
+	Relay ac;
+	Relay htr;
 	int currentMode = 0;
 	int status = 0;
 
 	Devices() {
 		lcd = new upm::Jhd1313m1(0, LCD_ADDR, RGB_ADDR);
 		adc = new upm::ADC121C021(0, ADC_ADDR);
-		ac = new upm::GroveRelay(2);
-		htr = new upm::GroveRelay(4);
+		ac = Relay(2);
+		htr = Relay(4);
 	}
 
 	~Devices() {
@@ -80,22 +80,22 @@ struct Devices {
 		switch (currentMode) {
 			case -1:
 				if (this.currentMode != -1) {
-					htr->off();
-					ac->on();
+					htr.off();
+					ac.on();
 					lcd->setColor(64, 64, 255);
 				}
 				break;
 			case 0:
 				if (this.currentMode != 0) {
-					htr->off();
-					ac->off();
+					htr.off();
+					ac.off();
 					lcd->setColor(128, 128, 128);
 				}
 				break;
 			case 1:
 				if (this.currentMode != 1) {
-					htr->on();
-					ac->off();
+					htr.on();
+					ac.off();
 					lcd->setColor(255, 64, 64);
 				}
 				break;
