@@ -160,10 +160,11 @@ void control_thread(Devices &devices, float &highTemp, float &lowTemp) {
 			cout << "Heater Mode : Heating On" << endl;
 		}
 		else {
-			cout << "currentMode: " << devices.currentMode << " Status: " << devices.status << endl;
-			cout << "getTemp() -> " << devices.getTemp() << " lowTemp: " << lowTemp << " highTemp: " << highTemp << endl;
 			cout << "Something wasn't caught..." << endl;
 		}
+		
+		cout << "currentMode: " << devices.currentMode << " Status: " << devices.status << endl;
+		cout << "getTemp() -> " << devices.getTemp() << " lowTemp: " << lowTemp << " highTemp: " << highTemp << endl;
 
 		sleep(5);
 	}
