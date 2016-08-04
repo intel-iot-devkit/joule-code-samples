@@ -33,7 +33,7 @@
 #include <mraa.hpp>
 #include <jhd1313m1.hpp>
 #include <adc121c021.hpp>
-#include <groverelay.hpp>
+#include "relay.h"
 
 using namespace std;
 
