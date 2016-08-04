@@ -189,7 +189,7 @@ int main(int argc, char **argv) {
 		if (req.url_params.get("coolSetting") != nullptr) {
 			string str = boost::lexical_cast<string>(req.url_params.get("coolSetting"));
 			if (str == "on") {
-				devices.unitControl(-1, 0)
+				devices.unitControl(-1, 0);
 			}
 			else if (str == "off") {
 				devices.unitControl(0,0);
