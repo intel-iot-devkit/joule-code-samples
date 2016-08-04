@@ -119,37 +119,50 @@ void control_thread(Devices &devices, float &highTemp, float &lowTemp) {
 		if (devices.currentMode == -1 && devices.getTemp() > lowTemp && devices.status == 1) {
 			//AC on, cooling, not yet to low temp.
 			//Do nothing.
+			cout << "AC Mode : Cooling On" << endl;
 		}
 		else if (devices.currentMode == -1 && devices.getTemp() <= lowTemp && devices.getTemp() > lowTemp-5 && devices.status == 1) {
 			//AC on, cooling, reached low temp.
 			//Shut off and set status to 0.
 			devices.unitControl(-1, 0);
+			cout << "AC Mode : Cooling On" << endl;
 		}
 		else if (devices.currentMode == -1 && devices.getTemp() <= lowTemp-5) {
 			//AC on, not cooling, 5 degrees under minimum temperature
 			//Switch to Heater mode, and start heating until high temperature reached.
 			devices.unitControl(1, 1);
+			cout << "Heater Mode : Heating On" << endl;
 		}
 		else if (devices.currentMode == -1 && devices.getTemp() >= highTemp && devices.status == 0) {
 			//AC on, not cooling, at max temperature.
 			devices.unitControl(-1, 1);
+			cout << "AC Mode : Cooling Off" << endl;
 		}
 		else if (devices.currentMode == 1 && devices.getTemp() < highTemp && devices.status == 1) {
 			//Heater on, heating, not yet to max temp.
 			//Do nothing.
+			cout << "Heater Mode : Heating On" << endl;
 		}
 		else if (devices.currentMode == 1 && devices.getTemp() >= highTemp && devices.getTemp() < highTemp+5 && devices.status == 1) {
 			//Heater on, heating, at max temp.
 			devices.unitControl(1, 0);
+			cout << "Heater Mode : Heating Off" << endl;
 		}
 		else if (devices.currentMode == 1 && devices.getTemp() >= highTemp + 5) {
 			//Heater on, 5 deg above maximum temperature
 			//Switch to AC mode, and start cooling until low temperature reached.
 			devices.unitControl(-1, 1);
+			cout << "AC Mode : Cooling On" << endl;
 		}
 		else if (devices.currentMode == 1 && devices.getTemp() <= lowTemp && devices.status == 0) {
 			//Heater on, not heating, at minimum temperature.
 			devices.unitControl(1, 1);
+			cout << "Heater Mode : Heating On" << endl;
+		}
+		else {
+			cout << "currentMode: " << devices.currentMode << " Status: " << devices.status << endl;
+			cout << "getTemp() -> " << devices.getTemp() << " lowTemp: " << lowTemp << " highTemp: " << highTemp << endl;
+			cout << "Something wasn't caught..." << endl;
 		}
 
 		sleep(5);
@@ -176,11 +189,9 @@ int main(int argc, char **argv) {
 		if (req.url_params.get("coolSetting") != nullptr) {
 			string str = boost::lexical_cast<string>(req.url_params.get("coolSetting"));
 			if (str == "on") {
-				devices.currentMode = -1;
 				devices.unitControl(-1, 0)
 			}
 			else if (str == "off") {
-				devices.currentMode = 0;
 				devices.unitControl(0,0);
 			}
 		}
