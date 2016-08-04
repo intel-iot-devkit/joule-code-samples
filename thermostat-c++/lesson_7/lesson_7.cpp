@@ -177,6 +177,7 @@ int main(int argc, char **argv) {
 			string str = boost::lexical_cast<string>(req.url_params.get("coolSetting"));
 			if (str == "on") {
 				devices.currentMode = -1;
+				devices.unitControl(-1, 0)
 			}
 			else if (str == "off") {
 				devices.currentMode = 0;
