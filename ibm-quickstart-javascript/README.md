@@ -8,6 +8,22 @@ This example sends a 1010 pattern to the IBM Bluemix Cloud.
 ##Setup
 
 Ensure that your GT has been updated with the latest build of Ostro-GT
+Make sure you have an internet connection established on your board.
+
+##Set your Device ID
+Edit the "id" field of the 5th line in the index.js file.  
+You can do this on the board by going into that directory 
+`cd ibm-quickstart-javascript`
+
+Then edit the index.js file
+`vim index.js`
+
+To insert text hit 'i'
+
+Then edit the "id" field, name it something unique
+
+To save, hit ESC, then 
+`:wq`
 
 ##Running the code
 
@@ -19,6 +35,6 @@ node index.js
 
 ##IBM Bluemix IoT
 
-Go to IBM IoT Quickstart (https://quickstart.internetofthings.ibmcloud.com) and enter your device ID to visualize the 1010 pattern.
+Go to IBM IoT Quickstart (https://quickstart.internetofthings.ibmcloud.com) and enter your device ID to visualize the 1010 pattern.  
 
 
