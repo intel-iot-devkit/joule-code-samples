@@ -28,7 +28,7 @@ Connect male to male wires from the headers on the GT to the grove shield, as sh
 
 ![table](breakout_2.jpg)
 
-Then plug in the LCD screen to the grove shield on the I2C connector closest to the A0 connector, and the 3-axis accelerometer to the second I2C port.  You need to connect them in this order because the GT board does not have pull up resistors, and the 3-axis accelerometer has them.
+Then plug in the LCD screen to the grove shield on the I2C connector closest to the A0 connector, and the 3-axis accelerometer to the second I2C port. **make sure you turn your board off and on , I2C only detects on boot, so if you don't turn on your board with the LCD and accelerometer plugged in it won't detect them** You need to connect them in this order because the GT board does not have pull up resistors, and the 3-axis accelerometer has them.
 
 ![lcd_accel](lcd_accel.jpg)
 
