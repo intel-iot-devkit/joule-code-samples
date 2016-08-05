@@ -1,7 +1,7 @@
 # BLE station with GT
 
 ## Introduction
-This BLE station example publishes accelerometer data to the IBM Bluemix IoT cloud and also detects any nearby BLE devices.
+This BLE station example publishes accelerometer data and temperature and humidity from a TI SensorTag to the IBM Bluemix IoT cloud..
 
 ## Required Hardware
 * TI SensorTag (CC2650), make sure it is turned on
