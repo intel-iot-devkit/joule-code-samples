@@ -1,8 +1,8 @@
 {
-  "name": "DigitalRead",
+  "name": "bluemix-quickstart",
   "description": "",
   "version": "0.0.0",
-  "main": "main.js",
+  "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
