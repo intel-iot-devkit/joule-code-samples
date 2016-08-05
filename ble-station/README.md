@@ -13,7 +13,17 @@ rfkill unblock bluetooth
 
 Here is the hardware setup:
 
+Connect male to male wires from the headers on the GT to the grove shield, as shown below
+
 ![table](connection_table.jpg)
+
+![table](breakout_1.jpg)
+
+![table](breakout_2.jpg)
+
+Then plug in the LCD screen to the grove shield on the I2C connector closest to the A0 connector, and the 3-axis accelerometer to the second I2C port.  You need to connect them in this order because the GT board does not have pull up resistors, and the 3-axis accelerometer has them.
+
+![lcd_accel](lcd_accel.jpg)
 
 ## Running the code
 You can launch this project from XDK (after first importing it from XDK IoT Edition), or run it directly on your device:
