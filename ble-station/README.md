@@ -13,7 +13,7 @@ rfkill unblock bluetooth
 
 Here is the hardware setup:
 
-![GT setup](gt-setup.jpg)
+![table](connection_table.jpg)
 
 ## Running the code
 You can launch this project from XDK (after first importing it from XDK IoT Edition), or run it directly on your device:
