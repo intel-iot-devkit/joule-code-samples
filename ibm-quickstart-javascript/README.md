@@ -11,7 +11,7 @@ Ensure that your GT has been updated with the latest build of Ostro-GT
 Make sure you have an internet connection established on your board.
 
 ##Set your Device ID
-Edit the "id" field of the 5th line in the index.js file.  
+Edit the "id" field of the 5th line in the index.js file.  It is currently set to "trial555". Rename it something unique.
 
 ![TI SensorTag](id_field.jpg)
 
