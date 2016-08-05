@@ -3,11 +3,17 @@
 ## Introduction
 This BLE station example publishes accelerometer data to the IBM Bluemix IoT cloud and also detects any nearby BLE devices.
 
+## Required Hardware
+* TI SensorTag (CC2650), make sure it is turned on
+* Grove Shield
+* Grove LCD
+* Grove 3-axis accelerometer
+* 5 male to male wires
+
 ## Setup
 * Ensure that your GT has been updated with the latest build of Ostro-GT
 * Ensure that your GT has internet access after setting up WiFi (i.e. using connman)
 * Ensure that Bluetooth has been enabled by using the command:
-* You will also need a TI SensorTag (CC2650), make sure it is turned on
 ```
 rfkill unblock bluetooth
 ```
