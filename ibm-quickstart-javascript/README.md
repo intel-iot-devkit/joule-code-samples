@@ -12,6 +12,9 @@ Make sure you have an internet connection established on your board.
 
 ##Set your Device ID
 Edit the "id" field of the 5th line in the index.js file.  
+
+![TI SensorTag](id_field.jpg)
+
 You can do this on the board by going into that directory 
 `cd ibm-quickstart-javascript`
 
