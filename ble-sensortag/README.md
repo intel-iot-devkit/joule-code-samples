@@ -13,7 +13,7 @@ rfkill unblock bluetooth
 
 You will also need a TI SensorTag (CC2650):
 
-![TI SensorTag](sensortag)
+![TI SensorTag](sensortag.jpg)
 
 ## Running the code
 You can launch this project from XDK (after first importing it from XDK IoT Edition), or run it directly on your device:
