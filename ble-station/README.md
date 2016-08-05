@@ -25,6 +25,10 @@ Then plug in the LCD screen to the grove shield on the I2C connector closest to 
 
 ![lcd_accel](lcd_accel.jpg)
 
+The full setup should look like this
+
+![full_setup](full_setup.jpg)
+
 ## Running the code
 You can launch this project from XDK (after first importing it from XDK IoT Edition), or run it directly on your device:
 
