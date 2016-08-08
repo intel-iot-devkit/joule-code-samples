@@ -1,0 +1,4 @@
+{
+  "SERVER": "http://doorbelltestapp.azurewebsites.net/counter/doorbell/inc",
+  "AUTH_TOKEN": "auth-token"
+}
