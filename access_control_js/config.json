@@ -1,0 +1,5 @@
+{
+  "CODE": "4321",
+  "SERVER": "http://access-control-gt-datastore.azurewebsites.net/logger/access-control",
+  "AUTH_TOKEN": "gtstore"
+}
