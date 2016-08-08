@@ -1,18 +1,18 @@
 # Doorbell in javascript*
 ## Introduction
 
-This smart doorbell application is part of a series of how-to Intel IoT code sample exercises using the Intel® IoT Developer Kit, Intel® Edison development platform, cloud platforms, APIs, and other technologies.
+This smart doorbell application is part of a series of how-to Intel IoT code sample exercises using the Intel® IoT Developer Kit, Intel® Gross Tete TuChuck development platform, cloud platforms, APIs, and other technologies.
 
 From this exercise, developers will learn how to:<br>
-- Connect the Intel® Edison development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
-- Interface with the Intel® Edison platform IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
-- Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Edison or Intel® Galileo board.<br>
+- Connect the Intel® Gross Tete TuChuck development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
+- Interface with the Intel® Gross Tete TuChuck platform IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
+- Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Gross Tete TuChuck or Intel® Galileo board.<br>
 - Store the doorbell ring data using Azure Redis Cache\* from Microsoft\* Azure\*, Redis Store\* from IBM\* Bluemix\*, or ElastiCache\* using Redis\* from Amazon\* Web Services\* (AWS\*), different cloud services for connecting IoT solutions including data analysis, machine learning, and a variety of productivity tools to simplify the process of connecting your sensors to the cloud and getting your IoT project up and running quickly.
 - Set up a MQTT-based server using IoT Hub\* from Microsoft\* Azure\*, IoT\* from IBM\* Bluemix\*, or IoT\* from Amazon\* Web Services\* (AWS\*), different cloud machine to machine messaging services based on the industry standard MQTT protocol.
 
 ## What it is
 
-Using an Intel® Edison board, this project lets you create a smart doorbell that:
+Using an Intel® Gross Tete TuChuck board, this project lets you create a smart doorbell that:
 - issues an audible notification whenever the doorbell is rung;
 - issues a visual notification whenever the doorbell is rung;
 - keeps track of visitors using cloud-based data storage.
@@ -27,7 +27,7 @@ Optionally, doorbell ring data can also be stored using the Intel IoT Examples D
 
 Grove* Starter Kit Plus containing:
 
-1. Intel® Edison with an Arduino* breakout board
+1. Intel® Gross Tete TuChuck with an Arduino* breakout board
 2. [Grove* Touch Sensor](http://iotdk.intel.com/docs/master/upm/node/classes/ttp223.html)
 3. [Grove* Buzzer](http://iotdk.intel.com/docs/master/upm/node/classes/buzzer.html)
 4. [Grove* RGB LCD](http://iotdk.intel.com/docs/master/upm/node/classes/jhd1313m1.html)
@@ -50,11 +50,11 @@ To begin, the project already exists as a template in Intel® XDK IoT Edition. Y
 5. Now it prompts you to take a tour of XDK, up to you if you want to take a tour.
 6. Now you have the code in front of you and you can play around with it as you please.
 
-You need to connect to your Intel® Edison board from your computer to send code to it.
+You need to connect to your Intel® Gross Tete TuChuck board from your computer to send code to it.
 
 ![](./images/xdk-select-device.png)
 
-Click the **IoT Device** menu at the bottom left. If your Intel® Edison is automatically recognized, select it.
+Click the **IoT Device** menu at the bottom left. If your Intel® Gross Tete TuChuck is automatically recognized, select it.
 
 ![](./images/xdk-manual-connect.png)
 
@@ -122,21 +122,21 @@ When you're ready to run the example, make sure you saved all the files.
 
 ![](./images/xdk-upload.png)
 
-Click the **Upload** icon to upload the files to the Intel® Edison board.
+Click the **Upload** icon to upload the files to the Intel® Gross Tete TuChuck board.
 
 ![](./images/xdk-run.png)
 
-Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the code on Intel® Edison.
+Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the code on Intel® Gross Tete TuChuck.
 
 ![](./images/xdk-upload-run.png)
 
-If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on Intel® Edison.
+If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on Intel® Gross Tete TuChuck.
 
 ![](./images/doorbell-output.png)
 
 You will see output similar to the above when the program is running.
 
-### Determining the Intel® Edison IP address
+### Determining the Intel® Gross Tete TuChuck IP address
 
 You can determine what IP address the Intel® Gross Tete TuChuck board is connected to by running the following command:
 
