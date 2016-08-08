@@ -12,8 +12,12 @@ Now the program is complete, and you can attempt to compile it on your board. To
 
 `g++ lesson_1.cpp -o lesson_1`
 
-This will compile the lesson_1.cpp file to an executable called lesson_current. The “-o” flag allows you to name an output file. Now, you can simply run the output file!
+This will compile the lesson_1.cpp file to an executable called lesson_1. The “-o” flag allows you to name an output file. Now, you can simply run the output file!
 
 `./lesson_1`
 
-Doing so should allow you to see the message we coded in the cout statement. Now, you're ready to move on to lesson 2!
+#### Troubleshooting
+
+Running the program should show the string `Hello from Intel on Grosse Tete!` on the console.
+
+If you get an error similar to `cout not declared in this scope` while compiling, be sure you properly included `iostream` as well as added the `using namespace std` and attempt to compile the program again.
