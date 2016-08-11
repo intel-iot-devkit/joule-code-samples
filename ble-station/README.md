@@ -1,4 +1,4 @@
-# BLE station with GT
+# BLE station with Intel® Joule development platform
 
 ## Introduction
 This BLE station example publishes accelerometer data and temperature and humidity from a TI SensorTag to the IBM Bluemix IoT cloud..
@@ -11,8 +11,8 @@ This BLE station example publishes accelerometer data and temperature and humidi
 * 5 male to male wires
 
 ## Setup
-* Ensure that your GT has been updated with the latest build of Ostro-GT
-* Ensure that your GT has internet access after setting up WiFi (i.e. using connman)
+* Ensure that your Intel® Joule Module has been updated with the latest build of Ostro-GT
+* Ensure that your Intel® Joule Module has internet access after setting up WiFi (i.e. using connman)
 * Ensure that Bluetooth has been enabled by using the command:
 ```
 rfkill unblock bluetooth
@@ -20,7 +20,7 @@ rfkill unblock bluetooth
 
 Here is the hardware setup:
 
-Connect male to male wires from the headers on the GT to the grove shield, as shown below
+Connect male to male wires from the headers on the Intel® Joule Module to the grove shield, as shown below
 
 ![table](connection_table.jpg)
 
@@ -28,7 +28,7 @@ Connect male to male wires from the headers on the GT to the grove shield, as sh
 
 ![table](breakout_2.jpg)
 
-Then plug in the LCD screen to the grove shield on the I2C connector closest to the A0 connector, and the 3-axis accelerometer to the second I2C port. **make sure you turn your board off and on , I2C only detects on boot, so if you don't turn on your board with the LCD and accelerometer plugged in it won't detect them** You need to connect them in this order because the GT board does not have pull up resistors, and the 3-axis accelerometer has them.
+Then plug in the LCD screen to the grove shield on the I2C connector closest to the A0 connector, and the 3-axis accelerometer to the second I2C port. **make sure you turn your board off and on , I2C only detects on boot, so if you don't turn on your board with the LCD and accelerometer plugged in it won't detect them** You need to connect them in this order because the Intel® Joule Module board does not have pull up resistors, and the 3-axis accelerometer has them.
 
 ![lcd_accel](lcd_accel.jpg)
 
