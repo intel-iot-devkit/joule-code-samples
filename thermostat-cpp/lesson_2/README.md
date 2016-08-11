@@ -1,5 +1,5 @@
 ## Lesson 2: GPIO
-Now that you know how to build a basic C++ program, we will delve deeper into working on Grosse Tete with C++. This lesson will teach you about using Mraa to access Grosse Tete's GPIO pins, allowing you to receive input and output through a general purpose interface.
+Now that you know how to build a basic C++ program, we will delve deeper into working on Joule with C++. This lesson will teach you about using Mraa to access Joule's GPIO pins, allowing you to receive input and output through a general purpose interface.
 
 #### The Code
 
@@ -13,13 +13,13 @@ Now we create a new function called a signal handler. It allows a signal like `S
 
 After this, we enter into our main statement, where we create an event handler known as `signal` that will handle the `Ctrl+c` signal. After that, we do our normal cout statement with a bit of a twist. You can see that there's a break between the two lines in the middle of the function call cout. This is possible because C++ is not a whitespace sensitive language. It doesn't care about "carriage-returns" when it comes to code. This means you can split otherwise unruly looking lines into something that is more readable. The line ends with a semicolon, telling the program that the line ends there, instead of at the carriage-return.
 
-Now we create a new gpio object, named gpio. This object is linked to pin 100, which is one of the onboard LEDs that Grosse Tete provides. We can then access this object any time we want to work with it!
+Now we create a new gpio object, named gpio. This object is linked to pin 100, which is one of the onboard LEDs that Joule provides. We can then access this object any time we want to work with it!
 
 No we add a logic statement, known as the `if` statement. This statement detects whether or not the gpio object has been properly created before moving on. If it hasn't it skips everything held within the brackets following the statement, moving on to the end of the program.
 
 If the gpio object was created properly then the program moves into the rest of the code. After this, we use an Mraa call in order to indicate that the pin is output, not input. After this, you start a while loop which will not end until you enter the Ctrl+c command in order to call the signal handler we made earlier.
 
-Within this loop, we call the command `gpio->write(1);`. `gpio->write(n)` will write the value of n to the gpio pin. In the case of the Grosse Tete writing a 1 the output turns off, writing a 0 turns the output on. Grosse Tete uses an “active low” system, which seems counter intuitive, but it’s easy to get used to.
+Within this loop, we call the command `gpio->write(1);`. `gpio->write(n)` will write the value of n to the gpio pin. In the case of the Joule writing a 1 the output turns off, writing a 0 turns the output on. Joule uses an “active low” system, which seems counter intuitive, but it’s easy to get used to.
 
 Next we do another new statement called sleep. `sleep(n)` does exactly what it says on the tin, it makes the program (or thread) sleep for n seconds. Finally we write a 0 to the gpio object, turning the LED on before sleeping again. This loops until you hit Ctrl+c!
 
