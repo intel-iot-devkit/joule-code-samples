@@ -4,8 +4,8 @@
 This BLE SensorTag example collects temperature and humidity data from the TI SensorTag and publishes it to the IBM Bluemix IoT cloud.
 
 ## Setup
-* Ensure that your GT has been updated with the latest build of Ostro-GT
-* Ensure that your GT has internet access after setting up WiFi (i.e. using connman)
+* Ensure that your Intel® Joule Module has been updated with the latest build of Ostro-GT
+* Ensure that your Intel® Joule Module has internet access after setting up WiFi (i.e. using connman)
 * Ensure that Bluetooth has been enabled by using the command:
 ```
 rfkill unblock bluetooth
