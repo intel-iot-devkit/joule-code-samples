@@ -1,7 +1,7 @@
 //Exploring C++ Programming on the Intel Joule Module
 
 /*
-* In the last lessons, you learned how to format a c++ program, and how to use a GPIO pin of the Grosse Tete or Edison.
+* In the last lessons, you learned how to format a c++ program, and how to use a GPIO pin of the Joule.
 * In this lesson, we'll cover the basics of PWM, or Pulse Width Modulation. This is a way of simulating analog output in
 * digital circuits. For this lesson, you'll need a small breadboard, a few jumper wires, any basic low-intensity LED, and a resistor of roughly 220ohm to limit
 * the current.

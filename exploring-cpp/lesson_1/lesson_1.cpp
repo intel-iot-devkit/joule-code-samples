@@ -10,6 +10,6 @@ using namespace std; //Commonly considered bad practice, this command prevents s
 //-		int main(int argc, char *argv[]) {}
 //-		int main(int argc, char **argv) {}
 int main(int argc, char **argv) {
-	cout << "Hello from Intel on Grosse Tete!" << endl; 	// This line should print to the console.
+	cout << "Hello from Intel on Joule!" << endl; 	// This line should print to the console.
 	return 0; 												//Do not forget this line. You should always return 0 if your code ran successfully, and non-zero of an error was caught during execution.
 }
