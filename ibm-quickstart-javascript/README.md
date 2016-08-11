@@ -7,7 +7,7 @@ This example sends a 1010 pattern to the IBM Bluemix Cloud.
 
 ##Setup
 
-Ensure that your GT has been updated with the latest build of Ostro-GT
+Ensure that your Intel® Joule Module has been updated with the latest build of Ostro-GT
 Make sure you have an internet connection established on your board.
 
 ##Set your Device ID
