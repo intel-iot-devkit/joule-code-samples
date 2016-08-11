@@ -19,10 +19,10 @@ Now ensure to use the proper compiler flags when you attempt to compile this pro
 
 #### Troubleshooting
 
-Running the program should make the LED you attached glow, dimly at first before getting brighter, then fading back out. If it doesnt, check your wiring and the polarity of your LED. Finally if it still doesnt work, enter the following command to find out what version of Mraa you have.
+Running the program should make the LED you attached glow, dimly at first before getting brighter, then fading back out. If it doesnt, check your wiring and the polarity of your LED. Finally if it still doesnt work, enter the following command to find out what version of mraa you have.
 
 `mraa-gpio version`
 
-If it returns a version that's less than 1.2.1 then you need to update your copy of Mraa to the latest version. Follow the instructions here.
+If it returns a version that's less than 1.2.1 then you need to update your copy of mraa to the latest version. Follow the instructions here.
 
 [//]: # (Insert link to installing mraa on GT)
