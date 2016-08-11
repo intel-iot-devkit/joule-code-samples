@@ -2,7 +2,7 @@
 
 /*
 * Now, let's try something new. For this lesson, you won't need a circuit at all;
-* you'll just need your Grosse Tete board, and your laptop to make a serial terminal
+* you'll just need your Joule board, and your laptop to make a serial terminal
 * connection to it. Let's get started!
 *
 * First, we'll need to get a copy of cmake. Use the following commands to install
