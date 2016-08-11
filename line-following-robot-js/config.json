@@ -1,0 +1,6 @@
+{
+  "CLOCKWISE": 1,
+  "WHITE_LINES": 0,
+  "SERVER": "http://access-control-gt-datastore.azurewebsites.net/logger/access-control",
+  "AUTH_TOKEN": "gtstore"
+}

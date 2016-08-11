@@ -2,19 +2,19 @@
 
 ## Introduction
 
-This access control system application is part of a series of how-to Intel® Internet of Things (IoT) code sample exercises using the Intel® IoT Developer Kit, Intel® Joule development platform, cloud platforms, APIs, and other technologies.
+This access control system application is part of a series of how-to Intel® Internet of Things (IoT) code sample exercises using the Intel® IoT Developer Kit, Intel® Joule Expansion Board development platform, cloud platforms, APIs, and other technologies.
 
 From this exercise, developers will learn how to:<br>
-- Connect the Intel® Joule development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
-- Interface with the Intel® Joule carrier board IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
-- Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Joule carrier board or from the Intel® Galileo board.<br>
+- Connect the Intel® Joule Expansion Board development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
+- Interface with the Intel® Joule Expansion Board platform IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
+- Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Joule Expansion board or from the Intel® Galileo board.<br>
 - Set up a web application server to let users enter the access code to disable the alarm system and store this alarm data using Azure Redis Cache\* from Microsoft Azure\*, Redis Store\* from IBM\* Bluemix\*, or ElastiCache\* using Redis\* from Amazon\* Web Services\* (AWS\*), different cloud services for connecting IoT solutions including data analysis, machine learning, and a variety of productivity tools to simplify the process of connecting your sensors to the cloud and getting your IoT project up and running quickly.
 - Set up a MQTT-based server using IoT Hub\* from Microsoft Azure\*, IoT\* from IBM Bluemix\*, or IoT\* from Amazon Web Services\* (AWS), different cloud machine to machine messaging services based on the industry standard MQTT protocol.
 
 
 ## What it is
 
-Using an Intel® Joule Module carrier board, this project lets you create a smart access control system that:<br>
+Using an Intel® Joule Expansion board, this project lets you create a smart access control system that:<br>
 - monitors a motion sensor to detect when a person is in an area that requires authorization.<br>
 - can be accessed with your mobile phone via the built-in web interface to disable the alarm.<br>
 - keeps track of access, using cloud-based data storage.
@@ -36,7 +36,7 @@ Optionally, all data can be stored using the Intel® IoT Examples data store or 
 
 Grove* Transportation and Safety Kit containing:
 
-1. Intel® Joule Module carrier board with a Grove Base Shield
+1. Intel® Joule Expansion board with a Grove Base Shield
 2. [Grove PIR Motion Sensor](http://iotdk.intel.com/docs/master/upm/node/classes/biss0001.html)
 3. [Grove RGB LCD](http://iotdk.intel.com/docs/master/upm/node/classes/jhd1313m1.html)
 4. 3.3 k-ohm resistors (2)
@@ -58,25 +58,25 @@ To begin, the project already exists as a template in Intel® XDK IoT Edition. Y
 5. Now it prompts you to take a tour of XDK, up to you if you want to take a tour.
 6. Now you have the code in front of you and you can play around with it as you please.
 
-You need to connect to your Intel® Joule Module from your computer to send code to it.
+You need to connect to your Intel® Joule Expansion board from your computer to send code to it.
 
 ![](./images/xdk-select-device.png)
 
-Click the **IoT Device** menu at the bottom left. If your Intel® Joule Module carrier board is automatically recognized, select it.
+Click the **IoT Device** menu at the bottom left. If your Intel® Joule Expansion board is automatically recognized, select it.
 
 ![](./images/xdk-manual-connect.png)
 
 Otherwise, select **Add Manual Connection**.
-In the **Address** field, type the ip address of your Intel® Joule Module carrier board.
+In the **Address** field, type the ip address of your Intel Joule Expansion board.
 In the **Port** field, type `58888`.
 Click **Connect** to save your connection.
 
 ### Connecting the Grove* sensors
 
-![](./images/access-control-setup.jpg)
+![](./images/access-control-overall.jpg)
 
-You need to have a Grove* Shield connected to the Intel® Joule Module carrier board correctly. Make sure you have the tiny VCC switch on the Grove Shield set to **5V**.
-The pin mapping for the Intel® Joule Module carrier board is not the same as Edison or Galileo board. The Intel® Joule Module carrier board has 2 breakouts which each having 40 pins. You also have access to 4 onboard LEDs. The following are the instructions for hooking up the Access Control circuitry.
+You need to have a Grove* Shield connected to the Intel Joule Expansion board correctly. Make sure you have the tiny VCC switch on the Grove Shield set to **5V**.
+The pin mapping for the Intel Joule Expansion board is not the same as Edison or Galileo board. The Intel Joule Expansion board has 2 breakouts which each having 40 pins. You also have access to 4 onboard LEDs. The following are the instructions for hooking up the Access Control circuitry.
 
 1. Pin-1 on Breakout-1 is used for the GPIO based sensor here, connect this pin to the D2 pin on the Grove base shield and plug one end of a grove cable connected to the Grove PIR motion sensor into the D2 port on the base shield.
 2. Pin 1 on breakout-2 is the ground pin and Pin 2 can be used to provide the 5V connection. Connect both these pins to the respective pins on the Grove Base Shield.
@@ -117,7 +117,7 @@ For information on how to configure the example for the optional Microsoft Azure
 
 [https://github.com/intel-iot-devkit/intel-iot-examples-mqtt/](https://github.com/intel-iot-devkit/intel-iot-examples-mqtt/)
 
-This example uses a server hosted on the Intel® Joule Module carrier board. You will be able to host the server on the board without any significant problems, however, in order to be able to access the application hosted by the server you would need to unblock the ports on the board.
+This example uses a server hosted on the Intel Joule Expansion board. You will be able to host the server on the board without any significant problems, however, in order to be able to access the application hosted by the server you would need to unblock the ports on the board.
 In order to do that please run the following commands:
 
 	$ iptables –F
@@ -126,14 +126,14 @@ In order to do that please run the following commands:
 	$ iptables –P OUTPUT ACCEPT
 	$ iptables –S
 	
-## Code Changes required for Intel® Joule Module
+## Code Changes required for Intel Joule Expansion Board
 
-There are no code changes required to run this example on Intel® Joule Module. You would have to however, change the pin number passed into the constructors of each of the sensor modules that have been initialized.
+There are no code changes required to run this example on Intel Joule Expansion Board. You would have to however, change the pin number passed into the constructors of each of the sensor modules that have been initialized.
 
-1. For the Grove PIR Motion Sensor, please pass in the pin number 1, this is because you are using pin-1 on breakout-1 on the Intel® Joule Module.
+1. For the Grove PIR Motion Sensor, please pass in the pin number 1, this is because you are using pin-1 on breakout-1 on the Intel Joule Expansion board.
 	var motion = new mymotion.BISS0001(1);
 
-2. For I2C RGB LCD, please pass in Bus number 0, there are 3 available I2C buses on the Intel® Joule Module, we are using only 1 for this example. These buses are numbered 0, 1, 2 and are available on the pins: 11, 13, 15, 17, 19, 21. We will be using pins 11 and 13.
+2. For I2C RGB LCD, please pass in Bus number 0, there are 3 available I2C buses on the Intel Joule Expansion Board, we are using only 1 for this example. These buses are numbered 0, 1, 2 and are available on the pins: 11, 13, 15, 17, 19, 21. We will be using pins 11 and 13.
 	var screen = new myscreen.Jhd1313m1(0, 0x3E, 0x62);
 
 ## Running the program using Intel® XDK IoT Edition
@@ -142,15 +142,15 @@ When you're ready to run the example, make sure you saved all the files.
 
 ![](./images/xdk-upload.png)
 
-Click the **Upload** icon to upload the files to the Intel® Joule Module carrier board.
+Click the **Upload** icon to upload the files to the Intel® Joule Expansion board.
 
 ![](./images/xdk-run.png)
 
-Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the code on the Intel® Joule Module carrier board.
+Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the code on the Intel® Joule Expansion board.
 
 ![](./images/xdk-upload-run.png)
 
-If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on the Intel® Joule Module carrier board.
+If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on the Intel® Joule Expansion board.
 
 ![](./images/access-control-output.png)
 
@@ -160,9 +160,9 @@ You will see output similar to the above when the program is running.
 
 ![](./images/access-control-web.png)
 
-The alarm is disabled using a single-page web interface served directly from the Intel® Joule Module carrier board while the sample program is running.
+The alarm is disabled using a single-page web interface served directly from the Intel® Joule Expansion board while the sample program is running.
 
-The web server runs on port `3000`, so if Intel® Joule Module carrier board is connected to Wi-Fi* on `192.168.1.13`, the address to browse to if you are on the same network is `http://192.168.1.13:3000`.
+The web server runs on port `3000`, so if Intel® Joule Expansion Board is connected to Wi-Fi* on `192.168.1.13`, the address to browse to if you are on the same network is `http://192.168.1.13:3000`.
 
 ![](./images/access-control-alert.jpg)
 
@@ -170,9 +170,9 @@ The web server runs on port `3000`, so if Intel® Joule Module carrier board is 
 
 ![](./images/access-control-wait-screen.jpg)
 
-### Determining the Intel® Joule Module carrier board's IP address
+### Determining the Intel® Joule Expansion board's IP address
 
-You can determine what IP address the Intel® Joule Module carrier board is connected to by running the following command:
+You can determine what IP address the Intel® Joule Expansion board is connected to by running the following command:
 
     ifconfig
  
