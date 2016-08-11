@@ -1,18 +1,18 @@
 # Doorbell in javascript*
 ## Introduction
 
-This smart doorbell application is part of a series of how-to Intel IoT code sample exercises using the Intel® IoT Developer Kit, Intel® Gross Tete TuChuck development platform, cloud platforms, APIs, and other technologies.
+This smart doorbell application is part of a series of how-to Intel IoT code sample exercises using the Intel® IoT Developer Kit, Intel® Joule development platform, cloud platforms, APIs, and other technologies.
 
 From this exercise, developers will learn how to:<br>
-- Connect the Intel® Gross Tete TuChuck development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
-- Interface with the Intel® Gross Tete TuChuck platform IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
-- Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Gross Tete TuChuck or Intel® Galileo board.<br>
+- Connect the Intel® Joule development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
+- Interface with the Intel® Joule development platform IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
+- Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Joule Module carrier board or Intel® Galileo board.<br>
 - Store the doorbell ring data using Azure Redis Cache\* from Microsoft\* Azure\*, Redis Store\* from IBM\* Bluemix\*, or ElastiCache\* using Redis\* from Amazon\* Web Services\* (AWS\*), different cloud services for connecting IoT solutions including data analysis, machine learning, and a variety of productivity tools to simplify the process of connecting your sensors to the cloud and getting your IoT project up and running quickly.
 - Set up a MQTT-based server using IoT Hub\* from Microsoft\* Azure\*, IoT\* from IBM\* Bluemix\*, or IoT\* from Amazon\* Web Services\* (AWS\*), different cloud machine to machine messaging services based on the industry standard MQTT protocol.
 
 ## What it is
 
-Using an Intel® Gross Tete TuChuck board, this project lets you create a smart doorbell that:
+Using an Intel® Joule Module carrier board, this project lets you create a smart doorbell that:
 - issues an audible notification whenever the doorbell is rung;
 - issues a visual notification whenever the doorbell is rung;
 - keeps track of visitors using cloud-based data storage.
@@ -27,7 +27,7 @@ Optionally, doorbell ring data can also be stored using the Intel IoT Examples D
 
 Grove* Starter Kit Plus containing:
 
-1. Intel® Gross Tete TuChuck with an Arduino* breakout board
+1. Intel® Joule Module carrier board with an Arduino* breakout board
 2. [Grove* Touch Sensor](http://iotdk.intel.com/docs/master/upm/node/classes/ttp223.html)
 3. [Grove* Buzzer](http://iotdk.intel.com/docs/master/upm/node/classes/buzzer.html)
 4. [Grove* RGB LCD](http://iotdk.intel.com/docs/master/upm/node/classes/jhd1313m1.html)
@@ -50,11 +50,11 @@ To begin, the project already exists as a template in Intel® XDK IoT Edition. Y
 5. Now it prompts you to take a tour of XDK, up to you if you want to take a tour.
 6. Now you have the code in front of you and you can play around with it as you please.
 
-You need to connect to your Intel® Gross Tete TuChuck board from your computer to send code to it.
+You need to connect to your Intel® Joule Module carrier board from your computer to send code to it.
 
 ![](./images/xdk-select-device.png)
 
-Click the **IoT Device** menu at the bottom left. If your Intel® Gross Tete TuChuck is automatically recognized, select it.
+Click the **IoT Device** menu at the bottom left. If your Intel® Joule Module carrier board is automatically recognized, select it.
 
 ![](./images/xdk-manual-connect.png)
 
@@ -66,8 +66,8 @@ Click **Connect** to save your connection.
 
 ![](./images/access-control-setup.jpg)
 
-You need to have a Grove* Shield connected to the GT TuChuck board correctly. Make sure you have the tiny VCC switch on the Grove Shield set to **5V**.
-The pin mapping for the Gross Tete TuChuck board is not the same as Edison or Galileo board. The GT board has 2 breakouts which each having 40 pins. You also have access to 4 onboard LEDs. The following are the instructions for hooking up the Access Control circuitry.
+You need to have a Grove* Shield connected to the Intel® Joule Module carrier board correctly. Make sure you have the tiny VCC switch on the Grove Shield set to **5V**.
+The pin mapping for the Intel® Joule Module carrier board is not the same as Edison or Galileo board. The Intel® Joule Module carrier board has 2 breakouts which each having 40 pins. You also have access to 4 onboard LEDs. The following are the instructions for hooking up the Access Control circuitry.
 
 1. Pin-1 on Breakout-1 is used for the GPIO based sensor here - TTP223, connect this pin to the D2 pin on the Grove base shield and plug one end of a grove cable connected to the Grove PIR motion sensor into the D2 port on the base shield.
 2. Pin-26 on Breakout-1 is used as the PWM pin which will be used for the Grove Buzzer. Connect this pin to D5 on the Grove Base Shield. Now use a Grove Connector Cable to connect the Grove buzzer to the D5 port on the Grove Base Shield.
@@ -108,7 +108,7 @@ For information on how to configure the example for the optional Microsoft\* Azu
 
 [https://github.com/intel-iot-devkit/intel-iot-examples-mqtt/](https://github.com/intel-iot-devkit/intel-iot-examples-mqtt/)
 
-This example needs cloud connectivity for which you would need to unblock the IP ports on the GT Board. They are done as follows:
+This example needs cloud connectivity for which you would need to unblock the IP ports on the Intel® Joule Module carrier board. They are done as follows:
 
 	$ iptables –F
 	$ iptables –P INPUT ACCEPT
@@ -122,23 +122,23 @@ When you're ready to run the example, make sure you saved all the files.
 
 ![](./images/xdk-upload.png)
 
-Click the **Upload** icon to upload the files to the Intel® Gross Tete TuChuck board.
+Click the **Upload** icon to upload the files to the Intel® Joule Module carrier board.
 
 ![](./images/xdk-run.png)
 
-Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the code on Intel® Gross Tete TuChuck.
+Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the code on Intel® Joule Module carrier board.
 
 ![](./images/xdk-upload-run.png)
 
-If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on Intel® Gross Tete TuChuck.
+If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on Intel® Joule Module carrier board.
 
 ![](./images/doorbell-output.png)
 
 You will see output similar to the above when the program is running.
 
-### Determining the Intel® Gross Tete TuChuck IP address
+### Determining the Intel® Joule Module carrier board IP address
 
-You can determine what IP address the Intel® Gross Tete TuChuck board is connected to by running the following command:
+You can determine what IP address the Intel® Joule Module carrier board is connected to by running the following command:
 
     ifconfig
  
