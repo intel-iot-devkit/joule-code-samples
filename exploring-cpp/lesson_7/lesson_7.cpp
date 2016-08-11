@@ -1,4 +1,4 @@
-//Truly Learn to Code with Intel and C++ Lesson 7
+//Exploring C++ Programming on the Intel Joule Module
 
 /*
 * In this lesson, we use some new techniques to create classes of our own, breaking our program into smaller, easier-to-digest pieces. Each of these classes holds it's own data, and handles all of it's own input and output. This makes them much simpler to use. See the README.md file on the github to learn more.

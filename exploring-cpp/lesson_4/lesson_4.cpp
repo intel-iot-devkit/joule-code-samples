@@ -1,4 +1,4 @@
-//Truly learn to code with Intel on Grosse Tete - Lesson 4
+//Exploring C++ Programming on the Intel Joule Module
 
 /*
 * At this point, you've learned how to format a c++ program,

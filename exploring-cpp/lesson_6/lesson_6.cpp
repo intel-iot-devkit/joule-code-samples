@@ -1,4 +1,4 @@
-//Truly learn to code with Intel on Grosse Tete - Lesson 6
+//Exploring C++ Programming on the Intel Joule Module
 
 /*
 * Now, let's try something new. For this lesson, you won't need a circuit at all;

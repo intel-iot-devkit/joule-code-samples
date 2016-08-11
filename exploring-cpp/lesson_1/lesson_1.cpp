@@ -1,4 +1,4 @@
-//Truly learn to code with Intel on Grosse Tete
+//Exploring C++ Programming on the Intel Joule Module
 
 #include <iostream> //The most commonly-included file. This allows you to use cin and cout to print to the console and collect user input.
 

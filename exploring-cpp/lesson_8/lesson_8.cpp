@@ -1,4 +1,4 @@
-//Truly Learn to Code with Intel and C++ Lesson 8
+//Exploring C++ Programming on the Intel Joule Module
 
 /*
 * Most of this code is easily recognizable from that of Lesson 7. In this lesson, however, we're going to make it multithreaded, and add in a Crow webserver to allow the user to turn the system on and off, as well as to set it's temperature. 
