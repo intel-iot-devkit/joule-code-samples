@@ -71,7 +71,6 @@ The pin mapping for the Intel Joule Expansion Board is not the same as Edison or
 
 1. Pin 1 on breakout-2 is the ground pin and Pin 2 can be used to provide the 5V connection. Connect both these pins to the respective pins on the Grove Base Shield.
 2. Pins 11 and 13 are I2C0SDA and I2C0SCL respectively and are used for I2C bus, these are again on Breakout-1. Plug these pins into a bread board where you would have to create a pull up circuit. This pull up circuit is necessary for the LCD to work. You would be pulling up the voltage on these lines to 5V. You can create this using 2 3.3k-ohm resistors.
-![](./images/i2c-pull-up.jpg)
 
 3. Plug the other end of the wires from the pull up circuit into the SDA and SCL lines on the Grove Base Shield and connect a Grove connector cable to connect the RGB LCD to one of the I2C ports on the Grove Base Shield.
 4. Plug in the Grove Digital Accelerometer to another I2C line on the Grove Base Shield.
