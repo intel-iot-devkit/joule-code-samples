@@ -1,4 +1,4 @@
-//Truly learn to code with Intel on Grosse Tete - Lesson 3
+//Exploring C++ Programming on the Intel Joule Module
 
 /*
 * In the last lessons, you learned how to format a c++ program, and how to use a GPIO pin of the Grosse Tete or Edison.
