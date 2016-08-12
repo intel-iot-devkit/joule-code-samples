@@ -7,7 +7,7 @@
 * 
 * This lesson will create a temperature control system which will keep an office or home at 22degC (72degF) or within one degree of it on either side. 
 */
-
+#define BUF 2.0f //The distance from the set temperature where the system will switch modes.
 #define LCD_ADDR (0x3E)
 #define RGB_ADDR (0x62)
 #define ADC_ADDR (0x50)
@@ -17,7 +17,6 @@
 
 int main(int argc, char **argv) {
 	Devices *devices = new Devices(LCD_ADDR, RGB_ADDR, ADC_ADDR, 2, 4);
-	crow::SimpleApp app;
 	float set = 22.0f, cur = 0.0f; //Set the "starting temperature" to 72 degrees farenheit, and initialize a variable to hold the current temperature.
 	bool mode = 0; //0=ac 1=htr
 	bool power = 0;
@@ -32,11 +31,11 @@ int main(int argc, char **argv) {
 		cur = devices->getTemp();
 		devices->display(1, 0, devices->stringify(cur));
 
-		if (cur <= set-5.0f) {
+		if (cur <= set-BUF) {
 			mode = 1;
 			power = 1;
 		}
-		else if (cur <= set-1.0f && cur > set-5.0f) {
+		else if (cur <= set-1.0f && cur > set-BUF) {
 			switch (mode) {
 				case 0:
 					//Set the power off.
@@ -52,7 +51,7 @@ int main(int argc, char **argv) {
 			//This statement is here in case we want to add other functionality
 			//	to this range.
 		}
-		else if (cur >= set+1.0f && cur < set+5.0f) {
+		else if (cur >= set+1.0f && cur < set+BUF) {
 			switch (mode) {
 				case 0:
 					//If the power's off, turn it on so it can cool.
@@ -63,7 +62,7 @@ int main(int argc, char **argv) {
 					break;
 			}
 		}
-		else if (cur >= set+5.0f) {
+		else if (cur >= set+BUF) {
 			//Set to AC mode and start cooling.
 			mode = 0;
 			power = 1;
