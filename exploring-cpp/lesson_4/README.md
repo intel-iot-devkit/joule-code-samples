@@ -2,17 +2,68 @@
 
 I2C - Pronounced "i-squared-c", stands for "inter-integrated circuit" and is a method of connecting two microcontrollers or other devices using only a minimum of pins. Many microcontrollers, memory chips, and sensors use this protocol to communicate.
 
-You'll need a Grove RGB LCD, two 10kohm resistors, a breadboard, six male-male jumper wires (two red, two black, one yellow, and one white), and a 4-pin JST cable to continue. You can also setup this circuit on the Grove shield from before, using a Grove RGB LCD, a pair of 4-pin JST connectors, and a Grove I2C ADC, and four male-male jumper wires.
+You'll need a Grove RGB LCD, two 10k ohm resistors, a breadboard, eight male-male jumper wires (two red, two black, two yellow, and two white), and a 4-pin JST cable to continue. You can also setup this circuit on the Grove shield from before, using a Grove RGB LCD, a pair of 4-pin JST connectors, and a Grove I2C ADC, and four male-male jumper wires.
 
-#### Breadboard
-TBA
+### Breadboard
 
-#### Grove Shield
-For Grove shield setup, first connect pin 44 (pin 4 on breakout 2) on Joule to the 5V pin on your Grove shield. Then connect pin 43 (pin 3 on breakout 2) to any GND pin on your Grove shield. Your Grove shields PWR LED should be lit, if not, make sure that the VCC switch on it is set to 5V. Now, because we’re using I2C, connect pin 11 (on breakout 1) to the SDA pin on the Grove shield. Next, you can connect pin 13 (on breakout 1) to the SCL pin on the Grove shield.
+1. Connect a red jumper wire between;
+	* Pin 44 (pin 4 on the Joule's JI3/Breakout #2 IO rail)
+	* The positive rail of your breadboard
+2. Connect a black jumper wire between;
+	* Pin 43 (pin 3 on the Joule's JI3/Breakout #2 IO rail)
+	* The negative rail of your breadboard
+3. Connect a 10k resistor between;
+	* The positive rail of your breadboard
+	* An empty column on your breadboard
+4. Connect a white jumper wire between;
+	* Pin 11 (on the Joule's JI2/Breakout #1 IO rail)
+	* The column you just attached a resistor to on your breadboard
+5. Connect a white jumper wire between;
+	* The column you just attached pin 11 to on your breadboard
+	* The white cable on the 4-pin JST connector
+6. Connect a 10k resistor between;
+	* The positive rail of your breadboard
+	* An empty column on your breadboard
+7. Connect a yellow jumper wire between;
+	* Pin 13 (on the Joule's JI2/Breakout #1 IO rail)
+	* The column you just attached a resistor to on your breadboard
+8. Connect a yellow jumper wire between;
+	* The column you just attached pin 13 to on your breadboard
+	* The yellow cable on the 4-pin JST connector
+9. Connect a red jumper wire between;
+	* The positive column on your breadboard
+	* The red cable on the 4-pin JST connector
+10. Connect a black jumper wire between;
+	* The negative rail on your breadboard
+	* The black cable on the 4-pin JST connector
+11. Connect the open end of the 4-pin JST connector to;
+	* The J1 socket on your Grove LCD
+	
 
-Finally, you can set up the LCD. Do so by connecting one of your 4-pin JST connectors to the I2C socket closest to the PWR LED on your Grove shield. Connect the other end of this connector to your LCD screen. And to complete the setup, connect the I2C side of the ADC (Labeled J1) to the I2C socket furthest away from the PWR LED.
+### Grove Shield
 
-#### The Code
+1. Connect a jumper wire between;
+	* Pin 44 (pin 4 on the Joule's JI3/Breakout #2 IO rail)
+	* The 5V pin on your Grove shield
+2. Connect a jumper wire between;
+	* Pin 43 (pin 3 on the Joule's JI3/Breakout #2 IO rail)
+	* Any of the GND pins on your Grove shield
+3. Ensure that the PWR LED on the Grove shield is on, if it isn't;
+	* Ensure that the VCC switch is set to 5V
+4. Connect a jumper wire between;
+	* Pin 11 (on the Joule's JI2/Breakout #1 IO rail)
+	* The SDA pin on your Grove shield
+5. Connect a jumper wire between;
+	* Pin 13 (on the Joule's JI2/Breakout #1 IO rail)
+	* The SCL pin on your Grove shield
+6. Connect a 4-pin JST connector between;
+	* The I2C socket closest to your PWM LED
+	* The J1 socket on your Grove LCD
+7. Connect a 4-pin JST connector between;
+	* The I2C socket furthest away from your PWM LED
+	* The J1 socket on your Grove I2C ADC
+
+### The Code
 
 The first thing we do in this code, is define two variables. These global variables are the I2C addresses of the LCD and its RGB backlight. If you aren't using a Grove RGB LCD, than you will need to change these to the proper addresses for your specific device. This way of defining things allows you to only have to change one line of code to allow the program to interact with something completely different.
 
@@ -24,13 +75,13 @@ Now we just print out `Press ctrl+c to exit...` on the console and loop until th
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -I /usr/include/upm -lupm-I2Clcd lesson_4.cpp -o lesson_4`
+`g++ -I /usr/include/upm -lupm-i2clcd lesson_4.cpp -o lesson_4`
 
-#### Troubleshooting
+### Troubleshooting
 
 Upon running the code, your LCD should turn purple, and read `Hello world` on it. 
 
-If you get an error similar to `Could not initialize LCD controller` then that means you aren't pulling the logic voltage properly. If you're using the Grove shield make sure that the I2C ADC is connected on the right end (J1 Port), and connected at the end of the I2C bus (farthest away from the power LED). If you're using a breadboard, ensure that your 10k ohm resistors are going between your 5V line and your SDA and SCL cables. They have to be separate resistors in order to keep the lines separate, and communication clear.
+If you get an error similar to `Could not initialize LCD controller` then that means you aren't pulling the logic voltage up properly. If you're using the Grove shield make sure that the I2C ADC is connected on the right end (J1 Port), and connected at the end of the I2C bus (farthest away from the power LED). If you're using a breadboard, ensure that your 10k ohm resistors are going between your 5V line and your SDA and SCL cables. They have to be separate resistors in order to keep the lines separate, and communication clear.
 
 If you get an error similar `Lost arbitration` then it means some communication is going wrong with your I2C device. Usually this is caused by a wire being shorted, or not having contact all of the time. Be sure to check your connections, and make sure none of them are crossed/shorted. Once you do that, feel free to re-run the program and it should be fixed. 
 

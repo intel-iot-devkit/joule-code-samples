@@ -1,8 +1,15 @@
 ## Lesson 5: Adding Sensors
 
-This lesson uses the same setup from the Grove shield setup of lesson 4, and adds a sensor, as well as functionality to the LCD! Start with your setup from lesson 4, connect a 4-pin JST connector to the other end of your Grove I2C ADC (labeled J2). On the end of this JST connecter, snap a Grove thermometer to it, and you’re done!
+This lesson uses the same setup from the Grove shield setup of lesson 4, and adds a sensor, as well as functionality to the LCD!
 
-#### The Code
+### Hardware
+
+1. Set up your Grove shield as detailed in Lesson 4
+2. Connect a 4-pin JST connector between;
+	* The input end of the Grove I2C ADC (labeled J2)
+	* The Grove temperature sensor
+
+### The Code
 
 This time, we define another address at the top of the program. This address is for the I2C ADC (Analog-to-Digital Converter). This is used to convert the analog value from our temperature sensor, to a normal I2C data stream. We also include a few new things. The first new include is the header file for interacting with the ADC. Next is `iomanip` which simply lets us format our output strings to be nice. Next we include `sstream` which allows us to make small streams of data to work with. Finally, we include `cmath` which gives us access to all sorts of mathematical functions.
 
@@ -20,9 +27,9 @@ Now we use a series of "if then else" statements to set the LCDs color based on 
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -I /usr/include/upm -lupm-I2Clcd -lupm-adc121c021`
+`g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021`
 
-#### Troubleshooting
+### Troubleshooting
 
 When you run the program, you should see the screen light up green with the words "Temperature: " and some value after it. The value should go up and down as you hold the temperature sensor and release it.
 
