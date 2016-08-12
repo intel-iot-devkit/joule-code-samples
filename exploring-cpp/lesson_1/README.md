@@ -1,4 +1,5 @@
 ## Lesson 1: Hello World
+
 Hello world is one of the first programs anyone attempts to write in just about any programming language. You begin by including something called `iostream`. This library is the most commonly included file in most C++ programs, as it allows you to use certain functions for user input and feedback.
 
 Next you enter the line, which makes the program use the namespace `std`. This means that the program will use the standard namespace. Although this is generally considered bad practice, itâ€™s useful for beginners in order to help avoid simple mistakes.
@@ -16,7 +17,7 @@ This will compile the lesson_1.cpp file to an executable called lesson_1. The â€
 
 `./lesson_1`
 
-#### Troubleshooting
+### Troubleshooting
 
 Running the program should show the string `Hello from Intel on Joule!` on the console.
 

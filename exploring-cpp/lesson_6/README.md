@@ -2,11 +2,11 @@
 
 This lesson is focused on creating a small webserver using the Crow micro-framework for web. Ensure that you’ve opened your IP tables in order to access the server!
 
-#### The Code
+### The Code
 
 In this lesson you won't need a circuit at all, but if you're planning on continuing it would be fine to leave your circuit from lesson 5 together for the moment. This lesson will be focusing on Crow, a lightweight micro-framework for displaying HTML webpages. We can use it to retrieve feedback outside of the console, in order to allow the board to do what you need it to remotely. In order to build applications using Crow you need to install it. So let's get to it!
 
-#### Installing Crow
+### Installing Crow
 
 In order to build Crow, we need to install Cmake. Make sure you have an internet connection before you get started. Go ahead and enter the following commands to get Cmake installed.
 
@@ -34,7 +34,7 @@ cd
 
 Now let's get to the code!
 
-#### The Code
+### The Code
 
 We begin by including `crow_all.h` which allows us to use the Crow functions and server. In order to start the server we call `crow::SimpleApp app;`. That's the actual server, ready to be loaded with all sorts of information to customize the server for your needs. We'll be using the file `lesson_6_index.html`. The following block of code does several things, so let's take a look at it.
 
@@ -53,7 +53,7 @@ Now ensure to use the proper compiler flags when you attempt to compile this pro
 
 Once you've compiled the program, you'll need to get your boards IP address. The device you want to use to access the web server will need to be on the same network as your board. To look up your IP address, use the `ifconfig` command. Now you can start up the program, which will start the Crow server. Connect to it by typing in the IP address you got from your `ifconfig` command, and you should see the HTML page!
 
-#### Troubleshooting
+### Troubleshooting
 
 If you have any issues with the program compiling, ensure that your compiler flags are correct.
 

@@ -1,7 +1,8 @@
 ## Lesson 2: GPIO
+
 Now that you know how to build a basic C++ program, we will delve deeper into working on Joule with C++. This lesson will teach you about using mraa to access Joule's GPIO pins, allowing you to receive input and output through a general purpose interface.
 
-#### The Code
+### The Code
 
 As you can see, we are using some new include files this time. The `csignal` library is a standard library that will allow us to exit the program cleanly. `cstdlib` is a standard general purpose library, as is `unistd.h`.
 
@@ -27,7 +28,7 @@ Now ensure to use the proper compiler flags when you attempt to compile this pro
 
 `g++ -lmraa lesson_2.cpp -o lesson_2`
 
-#### Troubleshooting
+### Troubleshooting
 
 After running it, you should see one of your LEDs blink. If mraa is properly mapped, the LED near the lower numbered pins on the first breakout should blink. 
 
