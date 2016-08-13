@@ -21,7 +21,7 @@ Using an Intel® Joule Expansion Board, this project lets you create a range fin
 
 As the stepper motor turns, it pauses to get readings from the Grove\* IR Distance Interrupter.
 
-These readings can be seen by viewing the web page served directly from Intel® Joule Expansion Board.
+These readings can be seen by viewing the web page served directly from the Intel® Joule Expansion Board.
 
 ## Hardware requirements
 
