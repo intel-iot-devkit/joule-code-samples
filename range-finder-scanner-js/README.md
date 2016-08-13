@@ -111,7 +111,7 @@ Click the **Run** icon at the bottom of Intel® XDK IoT Edition. This runs the c
 
 ![](./images/xdk-upload-run.png)
 
-If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on Intel® Joule Expansion Board.
+If you made changes to the code, click **Upload and Run**. This runs the latest code with your changes on the Intel® Joule Expansion Board.
 
 ![](./images/range-finder-output.png)
 
@@ -121,9 +121,9 @@ You will see output similar to the above when the program is running.
 
 ![](./images/range-finder-web.png)
 
-The range finder data is viewed using a single-page web interface served from Intel® Joule Expansion Board while the sample program is running.
+The range finder data is viewed using a single-page web interface served from the Intel® Joule Expansion Board while the sample program is running.
 
-The web server runs on port `3000`, so if Intel® Joule Expansion Board is connected to Wi-Fi* on `192.168.1.13`, the address to browse to if you are on the same network is `http://192.168.1.13:3000`.
+The web server runs on port `3000`, so if the Intel® Joule Expansion Board is connected to Wi-Fi\* on `192.168.1.13`, the address to browse to if you are on the same network is `http://192.168.1.13:3000`.
 
 ### Determining the Intel® Joule Expansion Board's IP address
 
