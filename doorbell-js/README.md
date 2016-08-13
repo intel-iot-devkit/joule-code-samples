@@ -67,9 +67,9 @@ Click **Connect** to save your connection.
 ![](./images/doorbell-overall.jpg)
 
 You need to have a Grove\* Shield connected to the Intel® Joule Expansion Board correctly. Make sure you have the tiny VCC switch on the Grove\* Shield set to **5V**.
-The pin mapping for the Intel® Joule Expansion Board is not the same as the Edison or Galileo board. The Intel® Joule Expansion Board has 2 breakouts, with each having 40 pins. You also have access to 4 onboard LEDs. The following are the instructions for hooking up the Access Control circuitry.
+The pin mapping for the Intel® Joule Expansion Board is not the same as the Edison or Galileo board. The Intel® Joule Expansion Board has 2 breakouts, with each having 40 pins. You also have access to 4 onboard LEDs. The following are the instructions for hooking up the doorbell circuitry.
 
-1. Pin-1 on Breakout-1 is used for the GPIO based sensor here - TTP223, connect this pin to the D2 pin on the Grove\* Base Shield and plug one end of a Grove\* cable connected to the Grove PIR motion sensor into the D2 port on the base shield.
+1. Pin-1 on Breakout-1 is used for the GPIO based sensor here - TTP223, connect this pin to the D2 pin on the Grove\* Base Shield and plug one end of a Grove\* cable connected to the Grove\* PIR motion sensor into the D2 port on the base shield.
 2. Pin-26 on Breakout-1 is used as the PWM pin which will be used for the Grove Buzzer. Connect this pin to D5 on the Grove\* Base Shield. Now use a Grove\* Connector Cable to connect the Grove\* buzzer to the D5 port on the Grove\* Base Shield.
 3. Pin 1 on breakout-2 is the ground pin and Pin 2 can be used to provide the 5V connection. Connect both these pins to the respective pins on the Grove\* Base Shield.
 4. Pins 11 and 13 are I2C0SDA and I2C0SCL, respectively, and are used for I2C bus; these are again on Breakout-1. Plug these pins into a bread board where you would have to create a pull up circuit. This pull up circuit is necessary for the LCD to work. You would be pulling up the voltage on these lines to 5V. You can create this using 2 3.3k-ohm resistors.
