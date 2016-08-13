@@ -8,7 +8,7 @@ From this exercise, developers will learn how to:<br>
 - Connect the Intel® Joule Expansion Board development platform, a computing platform designed for prototyping and producing IoT and wearable computing products.<br>
 - Interface with the Intel® Joule Expansion Board platform IO and sensor repository using MRAA and UPM from the Intel® IoT Developer Kit, a complete hardware and software solution to help developers explore the IoT and implement innovative projects.<br>
 - Run this code sample in Intel® XDK IoT Edition, an IDE for creating applications that interact with sensors and actuators, enabling a quick start for developing software for the Intel® Joule Expansion Board.<br>
-- Set up a web application server to view range finder data using a web page served directly from Intel® Joule Expansion Board.
+- Set up a web application server to view range finder data using a web page served directly from the Intel® Joule Expansion Board.
 
 ## What it is
 
@@ -40,7 +40,7 @@ Grove\* Robotics Kit, containing:
 
 ### How to set up
 
-To begin, the project already exists as a template in Intel® XDK IoT Edition. You can follow the following steps to set it up.
+To begin, the project already exists as a template in the Intel® XDK IoT Edition. You can follow the following steps to set it up.
 
 1. Under "START A NEW PROJECT" (to the left of the screen), click on Templates
 2. Now select "Range Finder Scanner" (more to the centre and the right of the screen) as the template that you want to try out.
