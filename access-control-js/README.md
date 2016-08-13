@@ -34,7 +34,7 @@ Optionally, all data can be stored using the Intel® IoT Examples data store or 
 
 ## Hardware requirements
 
-Grove* Transportation and Safety Kit containing:
+Grove\* Transportation and Safety Kit, containing:
 
 1. Intel® Joule Expansion Board with a Grove\* Base Shield
 2. [Grove\* PIR Motion Sensor](http://iotdk.intel.com/docs/master/upm/node/classes/biss0001.html)
