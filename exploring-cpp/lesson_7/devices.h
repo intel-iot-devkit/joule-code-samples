@@ -13,8 +13,8 @@ class Devices {
 private:
 	Jhd1313m1 *lcd;
 	ADC121C021 *adc;
-	Relay *ac;
-	Relay *htr;
+	Relay ac;
+	Relay htr;
 public:
 	//Default (empty) constructor.
 	Devices();
@@ -32,4 +32,6 @@ public:
 	void clear();
 	void color(int r, int g, int b);
 	float getTemp();
+	void setAc(bool b);
+	void setHtr(bool b);
 }

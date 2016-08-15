@@ -16,7 +16,7 @@
 #include <sstream>
 
 int main(int argc, char **argv) {
-	Devices *devices = new Devices(LCD_ADDR, RGB_ADDR, ADC_ADDR, 2, 4);
+	Devices devices = Devices(LCD_ADDR, RGB_ADDR, ADC_ADDR, 2, 4);
 	float set = 22.0f, cur = 0.0f; //Set the "starting temperature" to 72 degrees farenheit, and initialize a variable to hold the current temperature.
 	bool mode = 0; //0=ac 1=htr
 	bool power = 0;
@@ -24,12 +24,12 @@ int main(int argc, char **argv) {
 
 
 	for (;;) {
-		devices->clear();
+		devices.clear();
 		std::ostringstream ss;
 		ss << std::fixed << std::setprecision(2) << "Hi: " << hi << " Low: " << low;
-		devices->display(0, 0, ss.str());
-		cur = devices->getTemp();
-		devices->display(1, 0, devices->stringify(cur));
+		devices.display(0, 0, ss.str());
+		cur = devices.getTemp();
+		devices.display(1, 0, devices.stringify(cur));
 
 		if (cur <= set-BUF) {
 			mode = 1;
@@ -67,5 +67,17 @@ int main(int argc, char **argv) {
 			mode = 0;
 			power = 1;
 		}
+
+		if (power) {
+			devices.setAc(!mode);
+			devices.setHtr(mode);
+		}
+
+		else {
+			devices.setAc(0);
+			devices.setHtr(0);
+		}
 	}
+
+	return 0;
 }

@@ -10,15 +10,13 @@ Devices::Devices() {}
 Devices::Devices(unsigned int lcd = LCD_ADDR, unsigned int rgb = RGB_ADDR, unsigned int adc = ADC_ADDR, int acPin, int htrPin) {
 	lcd = new Jhd1313m1(0, lcd, rgb);
 	adc = new ADC121C021(0, adc);
-	ac = new Relay(acPin);
-	htr = new Relay(htrPin);
+	ac =  Relay(acPin);
+	htr = Relay(htrPin);
 }
 
 Devices::~Devices() {
 	delete lcd;
 	delete adc;
-	delete ac;
-	delete htr;
 }
 
 template <typename T> string Devices::stringify(T data) {
@@ -50,4 +48,26 @@ float Devices::getTemp() {
 	int resistance = adc->value();
 	float temperature = 1.0/(log((100000.0*(4095.0/((float)resistance)-1.0))/100000.0)/4275+1/298.15)-273.15;
 	return temperature;
+}
+
+void Devices::setAc(bool b) {
+	switch (b) {
+		case true:
+			ac.on();
+			break;
+		case false:
+			ac.off();
+			break;
+	}
+}
+
+void Devices::setHtr(bool b) {
+	switch (b) {
+		case true:
+			htr.on();
+			break;
+		case false:
+			htr.off();
+			break;
+	}
 }
