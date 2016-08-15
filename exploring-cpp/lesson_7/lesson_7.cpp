@@ -20,16 +20,16 @@ int main(int argc, char **argv) {
 	float set = 22.0f, cur = 0.0f; //Set the "starting temperature" to 72 degrees farenheit, and initialize a variable to hold the current temperature.
 	bool mode = 0; //0=ac 1=htr
 	bool power = 0;
-	
-
 
 	for (;;) {
 		devices.clear();
 		std::ostringstream ss;
-		ss << std::fixed << std::setprecision(2) << "Hi: " << hi << " Low: " << low;
+		ss << std::fixed << std::setprecision(2) << "Target: " << set;
 		devices.display(0, 0, ss.str());
 		cur = devices.getTemp();
-		devices.display(1, 0, devices.stringify(cur));
+		ss.str(std::string()); //clear the stringstream
+		ss << std::fixed << std::setprecision(2) << cur;
+		devices.display(1, 5, ss.str());
 
 		if (cur <= set-BUF) {
 			mode = 1;
