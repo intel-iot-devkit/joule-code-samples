@@ -1,3 +1,6 @@
+#ifndef RELAY_H_
+#define RELAY_H_
+
 #include <mraa.hpp>
 
 class Relay {
@@ -16,3 +19,5 @@ private:
 	mraa::Gpio *outPin;
 
 };
+
+#endif
