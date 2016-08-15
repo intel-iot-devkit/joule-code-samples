@@ -1,3 +1,6 @@
+#ifndef DEVICES_H_
+#define DEVICES_H_
+
 #define LCD_ADDR (0x3E)
 #define RGB_ADDR (0x62)
 #define ADC_ADDR (0x50)
@@ -34,4 +37,6 @@ public:
 	float getTemp();
 	void setAc(bool b);
 	void setHtr(bool b);
-}
+};
+
+#endif
