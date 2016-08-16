@@ -23,7 +23,7 @@
 var m = require('mraa'); //require mraa
 console.log('MRAA Version: ' + m.getVersion()); //write the mraa version to the console
 
-var myLed = new m.Gpio(101); //onboard LED
+var myLed = new m.Gpio(103); //onboard LED
 myLed.dir(m.DIR_OUT); //set the gpio direction to output
 var ledState = true; //Boolean to hold the state of Led
 
