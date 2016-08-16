@@ -1,5 +1,5 @@
 
-#BLE SensorTag
+#IBM Bluemix Cloud
 
 ##Introduction
 
