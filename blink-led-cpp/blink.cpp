@@ -27,7 +27,7 @@
 #include <unistd.h>
 
 #include "mraa.hpp"
-#define DEFAULT_IOPIN 101
+#define DEFAULT_IOPIN 103
 
 static int iopin;
 int running = 0;
