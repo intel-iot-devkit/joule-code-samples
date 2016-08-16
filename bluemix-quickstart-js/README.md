@@ -1,5 +1,5 @@
 
-#IBM Bluemix Cloud
+#IBM* Bluemix Cloud*
 
 ##Introduction
 
