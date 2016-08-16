@@ -22,7 +22,7 @@
 import mraa
 import time
 
-x = mraa.Gpio(101) #onboard LED
+x = mraa.Gpio(103) #onboard LED
 x.dir(mraa.DIR_OUT)
 
 while True:
