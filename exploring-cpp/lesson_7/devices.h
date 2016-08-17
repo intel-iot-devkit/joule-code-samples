@@ -21,18 +21,44 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-//Exploring C++ Programming on the Intel Joule Module
+#ifndef DEVICES_H_
+#define DEVICES_H_
 
-#include <iostream> //The most commonly-included file. This allows you to use cin and cout to print to the console and collect user input.
+#define LCD_ADDR (0x3E)
+#define RGB_ADDR (0x62)
+#define ADC_ADDR (0x50)
 
-using namespace std; //Commonly considered bad practice, this command prevents some simple mistakes that can be difficult to track down for a beginner. Generally, though, you wouldn't do this.
+#include "jhd1313m1.hpp"
+#include "adc121c021.hpp"
+#include "mraa.hpp"
 
-//The main entry point for your program. This is the function that the OS (OSTRO) calls when it "runs" your code.
-//This should always follow one of three formats. Those are, in order of commonality:
-//-		int main() {}
-//-		int main(int argc, char *argv[]) {}
-//-		int main(int argc, char **argv) {}
-int main(int argc, char **argv) {
-	cout << "Hello from Intel on Joule!" << endl; 	// This line should print to the console.
-	return 0; 												//Do not forget this line. You should always return 0 if your code ran successfully, and non-zero of an error was caught during execution.
-}
+#include <sstream>
+#include <string>
+#include <iomanip>
+
+class Devices {
+private:
+	upm::Jhd1313m1 *lcd;
+	upm::ADC121C021 *adc;
+	mraa::Gpio *ac;
+	mraa::Gpio *htr;
+public:
+	//Default (empty) constructor.
+	Devices();
+	//Constructor
+	Devices(unsigned int lcd = LCD_ADDR, unsigned int rgb = RGB_ADDR, unsigned int adc = ADC_ADDR, int acPin = 2, int htrPin = 4);
+	//Copy Constructor
+	Devices(const Devices& d);
+	//Destructor
+	~Devices();
+
+	//Functions
+	void display(int row, int col, std::string str);
+	void clear();
+	void color(int r, int g, int b);
+	float getTemp();
+	void setAc(bool b);
+	void setHtr(bool b);
+};
+
+#endif
