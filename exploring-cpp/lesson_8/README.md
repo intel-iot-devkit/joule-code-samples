@@ -14,7 +14,7 @@ We then go into our main statement. This statement creates a thread named `t1` w
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021 -lmraa -lpthread -lboost_system  -std=c++11 lesson_7.cpp devices.cpp -o lesson_7`
+`g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021 -lmraa -lpthread -lboost_system  -std=c++11 lesson_8.cpp devices.cpp -o lesson_8`
 
 ### Troubleshooting
 
