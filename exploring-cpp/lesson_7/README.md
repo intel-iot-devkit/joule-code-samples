@@ -1,6 +1,6 @@
 ## Lesson 7: Classes and Encapsulation
 
-In this lesson, we use some new techniques to create classes of our own, breaking our program into smaller, easier-to-digest pieces. Each of these classes holds its own data, and handles all of its own input and output. This makes them much simpler to use. See the README.md file on the github to learn more. We also use a new device: A relay. A relay is an electromechanical device that switches a high-current device on and off using a low-current digital signal. This lesson will create a temperature control system which will keep an office or home at 22degC (72degF) or within one degree of it on either side.
+In this lesson, we use some new techniques to create classes of our own, breaking our program into smaller, easier-to-digest pieces. Each of these classes holds its own data, and handles all of its own input and output. This makes them much simpler to use. We also use a new device: A relay. A relay is an electromechanical device that switches a high-current device on and off using a low-current digital signal. This lesson will create a temperature control system which will keep an office or home at 22degC (72degF) or within one degree of it on either side.
 
 ### The Hardware
 
