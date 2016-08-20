@@ -2,11 +2,11 @@
 
 This lesson is focused on creating a small webserver using the Crow micro-framework for web. Ensure that you’ve opened your IP tables in order to access the server!
 
-### The Code
+### The Software
 
 In this lesson you won't need a circuit at all, but if you're planning on continuing it would be fine to leave your circuit from lesson 5 together for the moment. This lesson will be focusing on Crow, a lightweight micro-framework for displaying HTML webpages. We can use it to retrieve feedback outside of the console, in order to allow the board to do what you need it to remotely. In order to build applications using Crow you need to install it. So let's get to it!
 
-### Installing Crow
+#### Installing Crow
 
 In order to build Crow, we need to install Cmake. Make sure you have an internet connection before you get started. Go ahead and enter the following commands to get Cmake installed.
 
@@ -34,7 +34,7 @@ cd
 
 Now let's get to the code!
 
-### The Code
+#### The Code
 
 We begin by including `crow_all.h` which allows us to use the Crow functions and server. In order to start the server we call `crow::SimpleApp app;`. That's the actual server, ready to be loaded with all sorts of information to customize the server for your needs. We'll be using the file `lesson_6_index.html`. The following block of code does several things, so let's take a look at it.
 
