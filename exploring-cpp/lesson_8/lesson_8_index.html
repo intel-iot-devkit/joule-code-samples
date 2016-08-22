@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Thermostat</title>
+		<style>
+			form {
+				float: right;
+				width: 33%;
+				margin-right: 33%;
+			}
+			input.submit {
+				float: right;
+				width: 12%;
+				margin-right: 44%;
+			}
+			fieldset.temp {
+				border-top-left-radius: 30px;
+				border-top-right-radius: 30px;
+			}
+			fieldset.pwr {
+				border-bottom-left-radius: 30px;
+				border-bottom-right-radius: 30px;
+			}
+			fieldset.overall {
+				border-radius: 30px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form  method="post">
+			<fieldset class="overall">
+				<fieldset class="temp">
+					<legend>Temperature Setting</legend>
+					<input type="number" name="target" min="20" max="30" step="0.1" value="22" /> &deg;C
+				</fieldset>
+				<fieldset class="pwr">
+					<legend>Power</legend>
+					<input type="radio" name="power" value="on" checked /> Power On <br />
+					<input type="radio" name="power" value="off" /> Power Off <br />
+				</fieldset>
+				<br /><input type="submit" class="submit" value="Set"/><br />
+			</fieldset>
+		</form>
+	</body>
+</html>
