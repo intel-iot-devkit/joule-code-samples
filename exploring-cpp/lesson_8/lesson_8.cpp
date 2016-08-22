@@ -19,7 +19,7 @@
 
 using namespace std;
 
-Devices devices;
+Devices devices = Devices(LCD_ADDR, RGB_ADDR, ADC_ADDR, 2, 4);
 
 void thread_function(Devices &devices, bool &mode, bool &power, float &setTemperature) {
 		for (;;) {
@@ -86,7 +86,6 @@ int main(int argc, char **argv) {
 	
 	signal(SIGINT, sig_handler);
 
-	devices = Devices(LCD_ADDR, RGB_ADDR, ADC_ADDR, 2, 4);
 
 	thread t1(thread_function, ref(devices), ref(mode), ref(power), ref(setTemperature));
 
