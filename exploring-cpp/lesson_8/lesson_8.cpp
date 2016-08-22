@@ -118,6 +118,7 @@ int main(int argc, char **argv) {
 	//Implement crow server.
 	CROW_ROUTE(app, "/")
 	([](const crow::request &req){
+		crow::mustache::context ctx;
 		if (req.url_params.get("target") != nullptr) {
 			setTemperature = boost::lexical_cast<float>(req.url_params.get("target"));
 		}
@@ -129,7 +130,7 @@ int main(int argc, char **argv) {
 				power = false;
 			}
 		}
-		return "";
+		return crow::mustache::load("lesson_8_index.html").render();
 	});
 
 	app.port(80).multithreaded().run();
