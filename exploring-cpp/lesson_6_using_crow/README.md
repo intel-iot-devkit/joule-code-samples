@@ -68,3 +68,9 @@ iptables -S
 ```
 
 This should set everything up properly.
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|

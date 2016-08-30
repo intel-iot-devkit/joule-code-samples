@@ -22,3 +22,9 @@ This will compile the lesson_1.cpp file to an executable called lesson_1. The â€
 Running the program should show the string `Hello from Intel on Joule!` on the console.
 
 If you get an error similar to `cout not declared in this scope` while compiling, be sure you properly included `iostream` as well as added the `using namespace std` and attempt to compile the program again.
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|

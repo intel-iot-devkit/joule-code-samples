@@ -35,3 +35,9 @@ After running it, you should see one of your LEDs blink. If mraa is properly map
 If a different LED blinks, or no LED blinks at all, be sure to check which pin you're using in the code. This could also be caused by using an outdated version of mraa. Follow these instructions to check your version and install the newest version if needed.
 
 [//]: # (Insert link to mraa version checker/install guide)
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|

@@ -55,3 +55,9 @@ Running the program should make the LED you attached glow, dimly at first before
 If it returns a version that's less than 1.2.1 then you need to update your copy of mraa to the latest version.
 
 [//]: # (Insert link to installing mraa on GT)
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|

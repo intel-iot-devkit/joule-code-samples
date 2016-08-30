@@ -41,3 +41,9 @@ iptables -S
 This should set everything up properly.
 
 If you get an error similar to `undefined reference to Devices::` then you forgot to include `devices.cpp` in your compiler flags.
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|
