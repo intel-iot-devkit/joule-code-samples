@@ -59,5 +59,5 @@ If it returns a version that's less than 1.2.1 then you need to update your copy
 ### Tested
 |	Operating System	|	Carrier Board	|	mraa Version	|
 |:---------------------:|:-----------------:|:-----------------:|
-|	Ostro 166			|	Intel Tuchuck	|	mraa 1.2.3		|
-|	Ostro 166 			|	Intel Tuchuck	|	mraa 1.2.2		|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|

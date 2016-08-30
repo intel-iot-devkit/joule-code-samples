@@ -44,5 +44,5 @@ For either of the above issues, you might also need to ensure that you're using 
 ### Tested
 |	Operating System	|	Carrier Board	|	mraa Version	|
 |:---------------------:|:-----------------:|:-----------------:|
-|	Ostro 166			|	Intel Tuchuck	|	mraa 1.2.3		|
-|	Ostro 166 			|	Intel Tuchuck	|	mraa 1.2.2		|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|

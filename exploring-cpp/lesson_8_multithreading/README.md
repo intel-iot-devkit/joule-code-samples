@@ -45,5 +45,5 @@ If you get an error similar to `undefined reference to Devices::` then you forgo
 ### Tested
 |	Operating System	|	Carrier Board	|	mraa Version	|
 |:---------------------:|:-----------------:|:-----------------:|
-|	Ostro 166			|	Intel Tuchuck	|	mraa 1.2.3		|
-|	Ostro 166 			|	Intel Tuchuck	|	mraa 1.2.2		|
+|	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
+|	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|
