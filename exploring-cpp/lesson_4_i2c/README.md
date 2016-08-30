@@ -86,3 +86,9 @@ If you get an error similar to `Could not initialize LCD controller` then that m
 If you get an error similar `Lost arbitration` then it means some communication is going wrong with your I2C device. Usually this is caused by a wire being shorted, or not having contact all of the time. Be sure to check your connections, and make sure none of them are crossed/shorted. Once you do that, feel free to re-run the program and it should be fixed. 
 
 If you get an error with something saying `upm::Jhd1313m1 *lcd is not declared in this scope` during compiling, it could mean a few things. Generally it means you've forgotten to use, or misspelled the `-lupm-adc121c021` compiler flag. It can also mean that you misspelled one of the functions within the program. Just check your spelling and try compiling the program again.
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|	Intel Tuchuck	|	mraa 1.2.3		|
+|	Ostro 166 			|	Intel Tuchuck	|	mraa 1.2.2		|

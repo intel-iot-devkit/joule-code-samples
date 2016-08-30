@@ -62,3 +62,9 @@ If you get an error with something saying `upm::ADC121C021 *adc is not declared 
 For either of the above issues, you might also need to ensure that you're using the `-I /usr/include/upm` compiler flag.
 
 If you get an error similar to `undefined reference to Devices::` then you forgot to include `devices.cpp` in your compiler flags.
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|	Intel Tuchuck	|	mraa 1.2.3		|
+|	Ostro 166 			|	Intel Tuchuck	|	mraa 1.2.2		|

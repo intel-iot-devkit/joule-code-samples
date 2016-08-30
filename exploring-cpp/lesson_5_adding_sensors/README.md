@@ -40,3 +40,9 @@ If you get an error similar `Lost arbitration` then it means some communication 
 If you get an error with something saying `upm::ADC121C021 *adc is not declared in this scope` during compiling, it could mean a few things. Generally it means you've forgotten to use, or misspelled the `-lupm-adc121c021` compiler flag. It can also mean that you misspelled one of the functions within the program. Just check your spelling and try compiling the program again.
 
 For either of the above issues, you might also need to ensure that you're using the `-I /usr/include/upm` compiler flag.
+
+### Tested
+|	Operating System	|	Carrier Board	|	mraa Version	|
+|:---------------------:|:-----------------:|:-----------------:|
+|	Ostro 166			|	Intel Tuchuck	|	mraa 1.2.3		|
+|	Ostro 166 			|	Intel Tuchuck	|	mraa 1.2.2		|
