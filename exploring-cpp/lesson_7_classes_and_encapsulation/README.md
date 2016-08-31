@@ -39,7 +39,7 @@ You can explore the `devices.cpp` file on your own, and view exactly how we inte
 
 Firstly, we define two new things, one being a buffer, that will tell the system how far away from its' target temperature it can go. The next one simply sets a variable to use as the refresh rate of the LCD screen. We also include our `devices.h` file. You can also notice we aren't using namespace standard anymore, which means we have to add `std::` to the beginning of some functions.
 
-Now, in our main statement, we create an object, of the type `Devices` called devices, with our current settings defined above. We also create two float variables, one called `set`, which is the temperature our system will aim for, and `cur` which is the current temperature. We also make two Boolean variables, one which decides the mode (AC or Heater), and one which tells the program whether the heating of cooling system is on or not.
+Now, in our main statement, we create an object, of the type `Devices` called devices, with our current settings defined above. We also create two float variables, one called `set`, which is the temperature our system will aim for, and `cur` which is the current temperature. We also make two Boolean variables, one which decides the mode (AC or Heater), and one which tells the program whether the heating or cooling system is on or not.
 
 We then create a loop, which repeats until the user enters ctrl+c. Firstly it clears the LCD of any content it had on it before. It then writes "Target :" and the target temperature, before retrieving and displaying the current temperature.
 
