@@ -45,7 +45,7 @@ using namespace std;
 Devices devices = Devices(LCD_ADDR, RGB_ADDR, ADC_ADDR, 2, 4);
 
 void thread_function(Devices &devices, bool &mode, bool &power, float &setTemperature) {
-		for (;;) {
+	for (;;) {
 		devices.clear();
 		std::ostringstream ss;
 		ss << std::fixed << std::setprecision(2) << "Target: " << setTemperature;
