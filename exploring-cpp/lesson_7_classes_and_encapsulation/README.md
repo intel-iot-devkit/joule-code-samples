@@ -59,7 +59,10 @@ If you get an error similar `Lost arbitration` then it means some communication 
 
 If you get an error with something saying `upm::ADC121C021 *adc is not declared in this scope` during compiling, it could mean a few things. Generally it means you've forgotten to use, or misspelled the `-lupm-adc121c021` compiler flag. It can also mean that you misspelled one of the functions within the program. Just check your spelling and try compiling the program again.
 
-For either of the above issues, you might also need to ensure that you're using the `-I /usr/include/upm` compiler flag.
+If you get an error with something saying `upm::Jhd1313m1 *lcd is not declared in this scope` during compiling, it could mean a few things. Generally it means you've forgotten to use, or misspelled the `-lupm-i2clcd` compiler flag. It can also mean that you misspelled one of the functions within the program. Just check your spelling and try compiling the program again.
+
+
+For any of the above issues, you might also need to ensure that you're using the `-I /usr/include/upm` compiler flag.
 
 If you get an error similar to `undefined reference to Devices::` then you forgot to include `devices.cpp` in your compiler flags.
 
