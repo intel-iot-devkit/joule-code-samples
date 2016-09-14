@@ -29,7 +29,7 @@
 #include "mraa.hpp"
 #define DEFAULT_IOPIN 103
 
-static int iopin;
+static int iopin = DEFAULT_IOPIN;
 int running = 0;
 
 void sig_handler(int signo){
