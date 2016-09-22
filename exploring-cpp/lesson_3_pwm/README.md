@@ -20,10 +20,10 @@ In the last lessons, you learned how to format a C++ program, and how to use a G
 ### Grove Shield
 
 1. Connect a jumper wire between;
-	* Pin 44 (Pin 4 on the Joule's JI3/Breakout #2 IO rail)
+	* Pin 44 (Pin 2 on the Joule's JI3/Breakout #2 IO rail)
 	* The 5V pin on your Grove shield
 2. Connect a jumper wire between;
-	* Pin 43 (Pin 3 on the Joule's JI3/Breakout #2 IO rail)
+	* Pin 43 (Pin 1 on the Joule's JI3/Breakout #2 IO rail)
 	* Any of the GND pins on your Grove shield
 3. Ensure that the PWR LED on the Grove shield is on, if it isn't;
 	* Ensure that the VCC switch is set to 5V
@@ -38,9 +38,9 @@ In the last lessons, you learned how to format a C++ program, and how to use a G
 
 ### The Code
 
-As before, we instantiate an object, but this time it’s a PWM object instead of a GPIO object. The program continues upon successful building of the object. This pin is then enabled, in order to allow for proper PWM. It runs the main loop forever, until Ctrl+c is pressed. The loop goes through the values 0.01 and 1 by 0.01 and write the value to the PWM pin at each iteration. It then loops through the values backwards.
+As before, we instantiate an object, but this time itâ€™s a PWM object instead of a GPIO object. The program continues upon successful building of the object. This pin is then enabled, in order to allow for proper PWM. It runs the main loop forever, until Ctrl+c is pressed. The loop goes through the values 0.01 and 1 by 0.01 and write the value to the PWM pin at each iteration. It then loops through the values backwards.
 
-It should cause the LED to glow brighter then dimmer through the iterations. Finally if the PWM object fails to be created, it’s deleted and the program returns 1, allowing you to know that it errored out.
+It should cause the LED to glow brighter then dimmer through the iterations. Finally if the PWM object fails to be created, itâ€™s deleted and the program returns 1, allowing you to know that it errored out.
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
