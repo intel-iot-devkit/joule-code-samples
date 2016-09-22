@@ -43,10 +43,10 @@ You'll need a Grove RGB LCD, two 10k ohm resistors, a breadboard, eight male-mal
 ### Grove Shield
 
 1. Connect a jumper wire between;
-	* Pin 44 (pin 4 on the Joule's JI3/Breakout #2 IO rail)
+	* Pin 44 (pin 2 on the Joule's JI3/Breakout #2 IO rail)
 	* The 5V pin on your Grove shield
 2. Connect a jumper wire between;
-	* Pin 43 (pin 3 on the Joule's JI3/Breakout #2 IO rail)
+	* Pin 43 (pin 1 on the Joule's JI3/Breakout #2 IO rail)
 	* Any of the GND pins on your Grove shield
 3. Ensure that the PWR LED on the Grove shield is on, if it isn't;
 	* Ensure that the VCC switch is set to 5V
