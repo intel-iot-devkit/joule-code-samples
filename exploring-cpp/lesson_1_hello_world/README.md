@@ -30,3 +30,4 @@ If you get an error similar to `cout not declared in this scope` while compiling
 |:---------------------:|:-----------------:|:-----------------:|
 |	Ostro 166			|Intel Stock Board	|	mraa 1.2.3		|
 |	Ostro 166 			|Intel Stock Board	|	mraa 1.2.2		|
+|	Ubuntu 16.04.1 LTS	|Intel Stock Board	|	mraa 1.2.3		|

@@ -28,6 +28,10 @@ Now ensure to use the proper compiler flags when you attempt to compile this pro
 
 `g++ -lmraa lesson_2.cpp -o lesson_2`
 
+Now run the program using the following command.
+
+`./lesson_2`
+
 ### Troubleshooting
 
 After running it, you should see one of your LEDs blink. If mraa is properly mapped, the LED near the lower numbered pins on the first breakout should blink. 

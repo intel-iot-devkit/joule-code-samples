@@ -4,6 +4,8 @@ I2C - Pronounced "i-squared-c", stands for "inter-integrated circuit" and is a m
 
 You'll need a Grove RGB LCD, two 10k ohm resistors, a breadboard, eight male-male jumper wires (two red, two black, two yellow, and two white), and a 4-pin JST cable to continue. You can also setup this circuit on the Grove shield from before, using a Grove RGB LCD, a pair of 4-pin JST connectors, and a Grove I2C ADC, and four male-male jumper wires.
 
+**Remeber to power down your Joule board _before_ making these connections!**
+
 ### Breadboard
 
 1. Connect a red jumper wire between;
@@ -76,6 +78,10 @@ Now we just print out `Press ctrl+c to exit...` on the console and loop until th
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
 `g++ -I /usr/include/upm -lupm-i2clcd lesson_4.cpp -o lesson_4`
+
+Now run the program using the following command.
+
+`./lesson_4`
 
 ### Troubleshooting
 

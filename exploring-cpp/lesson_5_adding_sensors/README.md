@@ -2,6 +2,8 @@
 
 This lesson uses the same setup from the Grove shield setup of lesson 4, and adds a sensor, as well as functionality to the LCD!
 
+**Remeber to power down your Joule board _before_ making these connections!**
+
 ### Hardware
 
 1. Set up your Grove shield as detailed in Lesson 4
@@ -28,6 +30,10 @@ Now we use a series of "if then else" statements to set the LCDs color based on 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
 `g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021`
+
+Now run the program using the following command.
+
+`./lesson_5`
 
 ### Troubleshooting
 

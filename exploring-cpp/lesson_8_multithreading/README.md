@@ -2,6 +2,8 @@
 
 Most of this code is easily recognizable from that of Lesson 7. In this lesson, however, we're going to make it multithreaded, and add in a Crow webserver to allow the user to turn the system on and off, as well as to set its temperature.
 
+**Remeber to power down your Joule board _before_ making these connections!**
+
 ### The Hardware
 
 1. Set up your Grove shield as detailed in Lesson 7
@@ -15,6 +17,10 @@ We then go into our main statement. This statement creates a thread named `t1` w
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
 `g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021 -lmraa -lpthread -lboost_system  -std=c++11 lesson_8.cpp devices.cpp -o lesson_8`
+
+Now run the program using the following command.
+
+`./lesson_8`
 
 ### Troubleshooting
 
