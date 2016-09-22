@@ -37,6 +37,8 @@ In the last lessons, you learned how to format a C++ program, and how to use a G
 	* A Grove LED module
 6. Connect an LED into the Grove LED module;
 	* Ensure that the long leg of the LED is in on the side marked with a "+"
+	
+![alt text](joule-code-samples/exploring-cpp/lesson_3_pwm/lesson_3_diagram.jpg "Lesson 3 diagram")
 
 ### The Code
 
