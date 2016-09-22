@@ -8,6 +8,8 @@ In this lesson you won't need a circuit at all, but if you're planning on contin
 
 #### Installing Crow
 
+##### On Target
+
 In order to build Crow, we need to install Cmake. Make sure you have an internet connection before you get started. Go ahead and enter the following commands to get Cmake installed.  Note, the last command can take over 15 minutes, be patient.
 
 ```bash
@@ -32,9 +34,27 @@ cp crow_all.h /usr/include/
 cd
 ```
 
-Now let's get to the code!
+##### Using ISS
+
+First create a project using the Joule platform, then in a linux console type:
+
+`docker ps`
+
+You should see a list of running Docker containers.
+
+Now open a session inside the container.
+
+`docker exec –ti <copy Ostro container id> /bin/bash`
+
+You can now follow the same steps to install crow (or any other library) Type exit to leave the session, and then commit the changes
+
+`docker commit <copy Ostro container id> inteliotdevkit/intel-iot-ostro:latest`
+
+This will commit the changes to the image. Your Ostro container will now contain these changes.
 
 #### The Code
+
+Now let's get to the code!
 
 We begin by including `crow_all.h` which allows us to use the Crow functions and server. In order to start the server we call `crow::SimpleApp app;`. That's the actual server, ready to be loaded with all sorts of information to customize the server for your needs. We'll be using the file `lesson_6_index.html`. The following block of code does several things, so let's take a look at it.
 
@@ -52,6 +72,10 @@ Now ensure to use the proper compiler flags when you attempt to compile this pro
 `g++ -std=c++11 -lpthread -lboost_system lesson_6.cpp -o lesson_6`
 
 Once you've compiled the program, you'll need to get your boards IP address. The device you want to use to access the web server will need to be on the same network as your board. To look up your IP address, use the `ifconfig` command. Now you can start up the program, which will start the Crow server. Connect to it by typing in the IP address you got from your `ifconfig` command, and you should see the HTML page!
+
+Now run the program using the following command.
+
+`./lesson_6`
 
 ### Troubleshooting
 

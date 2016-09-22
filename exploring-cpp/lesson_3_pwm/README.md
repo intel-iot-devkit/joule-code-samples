@@ -2,6 +2,8 @@
 
 In the last lessons, you learned how to format a C++ program, and how to use a GPIO pin of the Joule or Edison. In this lesson, we'll cover the basics of PWM, or Pulse Width Modulation. This is a way of simulating analog output in digital circuits. For this lesson, you'll need a small breadboard, a few jumper wires, any basic low-intensity LED, and a resistor of roughly 220ohm to limit the current. You could also use a Grove Shield, combined with an LED module (with LED), one of the 4 pin JST connectors and a few jumper wires.
 
+**Remeber to power down your Joule board _before_ making these connections!**
+
 ### Breadboard
 
 1. Connect a jumper wire between;
@@ -45,6 +47,10 @@ It should cause the LED to glow brighter then dimmer through the iterations. Fin
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
 `g++ -lmraa lesson_3.cpp -o lesson_3`
+
+Now run the program using the following command.
+
+`./lesson_3`
 
 ### Troubleshooting
 

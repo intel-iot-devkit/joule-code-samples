@@ -2,6 +2,8 @@
 
 In this lesson, we use some new techniques to create classes of our own, breaking our program into smaller, easier-to-digest pieces. Each of these classes holds its own data, and handles all of its own input and output. This makes them much simpler to use. We also use a new device: A relay. A relay is an electromechanical device that switches a high-current device on and off using a low-current digital signal. This lesson will create a temperature control system which will keep an office or home at 22degC (72degF) or within one degree of it on either side.
 
+**Remeber to power down your Joule board _before_ making these connections!**
+
 ### The Hardware
 
 1. Set up your Grove shield as detailed in Lesson 4
@@ -48,6 +50,10 @@ Now we go through a series of "if then else" statements. These statements detect
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
 `g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021 -lmraa -std=c++11 lesson_7.cpp devices.cpp -o lesson_7`
+
+Now run the program using the following command.
+
+`./lesson_7`
 
 ### Troubleshooting
 
