@@ -22,10 +22,10 @@ In the last lessons, you learned how to format a C++ program, and how to use a G
 ### Grove Shield
 
 1. Connect a jumper wire between;
-	* Pin 44 (Pin 2 on the Joule's JI3/Breakout #2 IO rail)
+	* Pin 42 (Pin 2 on the Joule's JI3/Breakout #2 IO rail)
 	* The 5V pin on your Grove shield
 2. Connect a jumper wire between;
-	* Pin 43 (Pin 1 on the Joule's JI3/Breakout #2 IO rail)
+	* Pin 41 (Pin 1 on the Joule's JI3/Breakout #2 IO rail)
 	* Any of the GND pins on your Grove shield
 3. Ensure that the PWR LED on the Grove shield is on, if it isn't;
 	* Ensure that the VCC switch is set to 5V
