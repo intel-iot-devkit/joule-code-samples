@@ -1,6 +1,6 @@
 ## Lesson 6: Using Crow
 
-This lesson is focused on creating a small webserver using the Crow micro-framework for web. Ensure that you’ve opened your IP tables in order to access the server!
+This lesson is focused on creating a small webserver using the Crow micro-framework for web. Ensure that youâ€™ve opened your IP tables in order to access the server!
 
 ### The Software
 
@@ -49,7 +49,7 @@ As convoluted as this seems, it simply builds up the server, using the file `les
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -lpthread -lboost_system lesson_6.cpp -o lesson_6`
+`g++ -std=c++11 -lpthread -lboost_system lesson_6.cpp -o lesson_6`
 
 Once you've compiled the program, you'll need to get your boards IP address. The device you want to use to access the web server will need to be on the same network as your board. To look up your IP address, use the `ifconfig` command. Now you can start up the program, which will start the Crow server. Connect to it by typing in the IP address you got from your `ifconfig` command, and you should see the HTML page!
 
