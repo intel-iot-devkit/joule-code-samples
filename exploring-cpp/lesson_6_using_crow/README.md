@@ -8,7 +8,7 @@ In this lesson you won't need a circuit at all, but if you're planning on contin
 
 #### Installing Crow
 
-In order to build Crow, we need to install Cmake. Make sure you have an internet connection before you get started. Go ahead and enter the following commands to get Cmake installed.
+In order to build Crow, we need to install Cmake. Make sure you have an internet connection before you get started. Go ahead and enter the following commands to get Cmake installed.  Note, the last command can take over 15 minutes, be patient.
 
 ```bash
 cd
