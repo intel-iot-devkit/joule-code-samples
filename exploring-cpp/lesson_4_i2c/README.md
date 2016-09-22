@@ -65,7 +65,7 @@ You'll need a Grove RGB LCD, two 10k ohm resistors, a breadboard, eight male-mal
 	* The I2C socket furthest away from your PWM LED
 	* The J1 socket on your Grove I2C ADC
 	
-![Lesson 4 diagram](joule-code-samples/exploring-cpp/lesson_4_i2c/lesson_4_diagram.jpg)
+![Lesson 4 diagram](https://github.com/intel-iot-devkit/joule-code-samples/raw/master/exploring-cpp/lesson_4_i2c/lesson_4_diagram.jpg "Lesson 4 diagram")
 
 ### The Code
 
