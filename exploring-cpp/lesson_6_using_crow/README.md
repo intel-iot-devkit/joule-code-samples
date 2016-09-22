@@ -1,6 +1,6 @@
 ## Lesson 6: Using Crow
 
-This lesson is focused on creating a small webserver using the Crow micro-framework for web. Ensure that you’ve opened your IP tables in order to access the server!
+This lesson is focused on creating a small webserver using the Crow micro-framework for web. Ensure that youâ€™ve opened your IP tables in order to access the server!
 
 ### The Software
 
@@ -17,7 +17,7 @@ cd CMake
 ./bootstrap && make && make install
 ```
 
-This should install Cmake for you and allow you to install anything that uses Cmake! Now we just need to install Crow. Use the following commands to do so.
+This should install Cmake for you and allow you to install anything that uses Cmake! Now we just need to install Crow. Use the following commands to do so. Note: the cmake step below can take over 15 minutes so be patient.
 
 ```bash
 cd
