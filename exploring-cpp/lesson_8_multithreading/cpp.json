@@ -1,0 +1,5 @@
+{
+	"main": "/lesson_8.cpp",
+	"ldflags": "-lupm-i2clcd -lupm-adc121c021 -lmraa -lpthread -lboost_system",
+	"cxxflags": "-std=c++11"
+}
