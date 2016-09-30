@@ -1,5 +1,5 @@
 {
-	"main": "/lesson_6.cpp",
+	"main": "lesson_6.cpp",
 	"ldflags": "-lpthread -lboost_system",
 	"cxxflags": "-std=c++11"
 }

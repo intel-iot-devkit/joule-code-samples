@@ -17,6 +17,6 @@
 			"libs": [
 					"upm"
 				],
-			"compatible": ["Joule"]
+			"compatible": ["Joule module"]
 		}
 }

@@ -11,6 +11,6 @@
 			"libs": [
 					
 				],
-			"compatible": ["Joule"]
+			"compatible": ["Joule module"]
 		}
 }
