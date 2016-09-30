@@ -1,0 +1,5 @@
+{
+	"main": "lesson_5.cpp",
+	"ldflags": "-lupm-i2clcd -lupm-adc121c021",
+	"cxxflags": ""
+}

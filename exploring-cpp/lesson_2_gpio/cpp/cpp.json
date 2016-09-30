@@ -1,0 +1,5 @@
+{
+	"main": "lesson_2.cpp",
+	"ldflags": "-lmraa",
+	"cxxflags": ""
+}
