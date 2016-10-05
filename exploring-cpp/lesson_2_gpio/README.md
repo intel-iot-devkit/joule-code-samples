@@ -26,7 +26,7 @@ Next we do another new statement called sleep. `sleep(n)` does exactly what it s
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -lmraa lesson_2.cpp -o lesson_2`
+`g++ lesson_2.cpp -o lesson_2 -lmraa`
 
 Now run the program using the following command.
 

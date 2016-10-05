@@ -48,7 +48,7 @@ It should cause the LED to glow brighter then dimmer through the iterations. Fin
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -lmraa lesson_3.cpp -o lesson_3`
+`g++ lesson_3.cpp -o lesson_3 -lmraa`
 
 Now run the program using the following command.
 

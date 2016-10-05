@@ -49,7 +49,7 @@ Now we go through a series of "if then else" statements. These statements detect
 
 Now ensure to use the proper compiler flags when you attempt to compile this program!
 
-`g++ -I /usr/include/upm -lupm-i2clcd -lupm-adc121c021 -lmraa -std=c++11 lesson_7.cpp devices.cpp -o lesson_7`
+`g++ -I /usr/include/upm -std=c++11 lesson_7.cpp devices.cpp -o lesson_7 -lupm-i2clcd -lupm-adc121c021 -lmraa`
 
 Now run the program using the following command.
 
