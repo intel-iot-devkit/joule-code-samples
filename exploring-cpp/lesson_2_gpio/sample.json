@@ -11,6 +11,6 @@
 			"libs": [
 					"mraa"
 				],
-			"compatible": ["Joule"]
+			"compatible": ["Joule module"]
 		}
 }

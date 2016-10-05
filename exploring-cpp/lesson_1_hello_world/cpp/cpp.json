@@ -1,5 +1,5 @@
 {
-	"main": "/lesson_1.cpp",
+	"main": "lesson_1.cpp",
 	"ldflags": "",
 	"cxxflags": ""
 }

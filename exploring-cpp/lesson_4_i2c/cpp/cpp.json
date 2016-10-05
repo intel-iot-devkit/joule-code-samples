@@ -1,5 +1,5 @@
 {
-	"main": "/lesson_4.cpp",
+	"main": "lesson_4.cpp",
 	"ldflags": "-lupm-i2clcd",
 	"cxxflags": ""
 }

@@ -11,6 +11,6 @@
 			"libs": [
 					"boost"
 				],
-			"compatible": ["Joule"]
+			"compatible": ["Joule module"]
 		}
 }
