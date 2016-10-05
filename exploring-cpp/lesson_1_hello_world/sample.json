@@ -1,0 +1,16 @@
+{
+	"name": "Hello World",
+	"category": "Joule Code Samples",
+	"description": "Use C++ to output a 'hello world' message through serial communication.",
+	"author": "Intel Corporation & Software Services Group",
+	"date": "2016-09-29",
+	"platform": {
+			"hwreq": [
+					"Joule board"
+				],
+			"libs": [
+					
+				],
+			"compatible": ["Joule module"]
+		}
+}

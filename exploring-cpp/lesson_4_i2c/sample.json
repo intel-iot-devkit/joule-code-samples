@@ -1,0 +1,18 @@
+{
+	"name": "I2C",
+	"category": "Joule Code Samples",
+	"description": "Use C++, mraa and UPM to communicate with an LCD screen.",
+	"author": "Intel Corporation & Software Services Group",
+	"date": "2016-09-29",
+	"platform": {
+			"hwreq": [
+					"Joule board",
+					"Grove base shield",
+					"Grove backlit LCD module"
+				],
+			"libs": [
+					"upm"
+				],
+			"compatible": ["Joule module"]
+		}
+}
