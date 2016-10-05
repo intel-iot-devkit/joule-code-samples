@@ -28,7 +28,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 * and in this lesson, you'll learn how to access
 * a digital pin on the Joule.
 * 
-* Compile with "g++ -lmraa lesson_2.cpp -o lesson_2"
+* Compile with "g++ lesson_2.cpp -o lesson_2 -lmraa"
 */
 
 #include <csignal>  //Library from the C/++ standard libraries to allow for clean exits.
