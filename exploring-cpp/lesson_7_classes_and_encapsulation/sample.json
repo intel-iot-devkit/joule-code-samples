@@ -1,0 +1,22 @@
+{
+	"name": "Classes and Encapsulation",
+	"category": "Joule Code Samples",
+	"description": "Use Advanced C++, mraa and UPM to prototype a thermostat.",
+	"author": "Intel Corporation & Software Services Group",
+	"date": "2016-09-29",
+	"platform": {
+			"hwreq": [
+					"Joule board",
+					"Grove base shield",
+					"Grove backlit LCD",
+					"Grove I2C ADC",
+					"Grove temperature sensor",
+					"Grove relay",
+					"Grove LED module"
+				],
+			"libs": [
+					"upm"
+				],
+			"compatible": ["Joule"]
+		}
+}
