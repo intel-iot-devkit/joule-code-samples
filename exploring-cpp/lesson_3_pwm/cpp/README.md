@@ -38,7 +38,7 @@ In the last lessons, you learned how to format a C++ program, and how to use a G
 6. Connect an LED into the Grove LED module;
 	* Ensure that the long leg of the LED is in on the side marked with a "+"
 	
-![Lesson 3 diagram](https://github.com/intel-iot-devkit/joule-code-samples/raw/master/exploring-cpp/lesson_3_pwm/lesson_3_diagram.jpg "Lesson 3 Diagram")
+![Lesson 3 diagram](https://raw.githubusercontent.com/intel-iot-devkit/joule-code-samples/master/exploring-cpp/lesson_3_pwm/cpp/lesson_3_diagram.jpg "Lesson 3 Diagram")
 
 ### The Code
 
