@@ -1,5 +1,5 @@
 {
-	"name": "GPIO",
+	"name": "Lesson 2: GPIO",
 	"category": "Joule Code Samples",
 	"description": "Use C++ and mraa to blink an onboard LED.",
 	"author": "Intel Corporation & Software Services Group",

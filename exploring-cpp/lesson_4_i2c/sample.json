@@ -1,5 +1,5 @@
 {
-	"name": "I2C",
+	"name": "Lesson 4: I2C",
 	"category": "Joule Code Samples",
 	"description": "Use C++, mraa and UPM to communicate with an LCD screen.",
 	"author": "Intel Corporation & Software Services Group",
