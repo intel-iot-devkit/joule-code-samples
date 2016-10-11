@@ -1,5 +1,5 @@
 {
-	"name": "Adding Sensors",
+	"name": "Lesson 5: Adding Sensors",
 	"category": "Joule Code Samples",
 	"description": "Use C++ and UPM to communicate with an LCD screen and a display the output of a connected temperature sensor.",
 	"author": "Intel Corporation & Software Services Group",

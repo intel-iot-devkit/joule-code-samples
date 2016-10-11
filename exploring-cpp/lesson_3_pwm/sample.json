@@ -1,5 +1,5 @@
 {
-	"name": "PWM",
+	"name": "Lesson 3: PWM",
 	"category": "Joule Code Samples",
 	"description": "Use C++ and mraa to make a LED glow on and off.",
 	"author": "Intel Corporation & Software Services Group",

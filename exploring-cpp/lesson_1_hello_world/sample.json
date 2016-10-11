@@ -1,5 +1,5 @@
 {
-	"name": "Hello World",
+	"name": "Lesson 1: Hello World",
 	"category": "Joule Code Samples",
 	"description": "Use C++ to output a 'hello world' message through serial communication.",
 	"author": "Intel Corporation & Software Services Group",

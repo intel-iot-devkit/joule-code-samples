@@ -1,5 +1,5 @@
 {
-	"name": "Using Crow",
+	"name": "Lesson 6: Using Crow",
 	"category": "Joule Code Samples",
 	"description": "Use C++ and Crow to host a webserver on your Joule board.",
 	"author": "Intel Corporation & Software Services Group",
