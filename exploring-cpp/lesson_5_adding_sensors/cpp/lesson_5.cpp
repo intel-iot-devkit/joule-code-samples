@@ -31,7 +31,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 * For this lesson, you'll need a few things:
 *  1. Your setup from Lesson 4
 *  2. A Grove ADC module.
-*  3. A Grove tepmerature sensor.
+*  3. A Grove temperature sensor.
 *  4. Two more 4-pin JST cables.
 * 
 * And that's it! With those four things, we can write a basic
