@@ -1,0 +1,18 @@
+{
+  "title" : "Onboard LED Blink",
+  "projectTypeName": "com.intel.xdk.projecttype.iotapp",
+  "sample": true,
+  "template": false,
+  "visible": false,
+  "sortWeight" : "0.9",
+  "repoSource": "github",
+  "repoUser": "intel-iot-devkit",
+  "repoName": "joule-code-samples",
+  "repoPath": "tree/master/blink-led-js",
+  "tooltip" : "Blink the onboard LED.",
+  "description" : "A simple node.js application that blinks the onboard LED.",
+  "articleUrl": "https://github.com/intel-iot-devkit/joule-code-samples/tree/master/blink-led-js",
+  "keywords" : ["led"],
+  "targets": ["joule"],
+  "runtimes": ["node"]
+}

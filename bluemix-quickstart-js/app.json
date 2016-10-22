@@ -1,0 +1,18 @@
+{
+  "title": "Bluemix Quick Start",
+  "projectTypeName": "com.intel.xdk.projecttype.iotapp",
+  "sample": true,
+  "template": false,
+  "visible": true,
+  "sortWeight" : "0.0",
+  "repoSource": "github",
+  "repoUser": "intel-iot-devkit",
+  "repoName": "joule-code-samples",
+  "repoPath": "tree/master/bluemix-quickstart-js",
+  "tooltip": "Sends a 1010 pattern to the IBM Bluemix Cloud.",
+  "description": "Sends a 1010 pattern to the IBM Bluemix Cloud.",
+  "articleUrl": "https://github.com/intel-iot-devkit/joule-code-samples/tree/master/bluemix-quickstart-js",
+  "keywords": ["bluemix"],
+  "targets": ["joule"],
+  "runtimes": ["node"]
+}
