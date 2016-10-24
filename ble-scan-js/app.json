@@ -1,0 +1,18 @@
+{
+  "title": "BLE Scan",
+  "projectTypeName": "com.intel.xdk.projecttype.iotapp",
+  "sample": true,
+  "template": false,
+  "visible": true,
+  "sortWeight" : "0.0",
+  "repoSource": "github",
+  "repoUser": "intel-iot-devkit",
+  "repoName": "joule-code-samples",
+  "repoPath": "tree/master/ble-scan-js",
+  "tooltip": "BLE station example.",
+  "description": "BLE station example that publishes accelerometer, temperature and humidity data from a TI SensorTag to the IBM Bluemix IoT cloudCreate.",
+  "articleUrl": "https://github.com/intel-iot-devkit/joule-code-samples/tree/master/ble-scan-js",
+  "keywords": ["bluetooth","ti sensortag","lcd","accelerometer"],
+  "targets": ["joule"],
+  "runtimes": ["node"]
+}

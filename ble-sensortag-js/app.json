@@ -1,0 +1,18 @@
+{
+  "title": "BLE Sensor Tag",
+  "projectTypeName": "com.intel.xdk.projecttype.iotapp",
+  "sample": true,
+  "template": false,
+  "visible": true,
+  "sortWeight" : "0.0",
+  "repoSource": "github",
+  "repoUser": "intel-iot-devkit",
+  "repoName": "joule-code-samples",
+  "repoPath": "tree/master/ble-sensortag-js",
+  "tooltip": "BLE sensor tag example.",
+  "description": "BLE SensorTag example collects temperature and humidity data from the TI SensorTag and publishes it to the IBM Bluemix IoT cloud.",
+  "articleUrl": "https://github.com/intel-iot-devkit/joule-code-samples/tree/master/ble-sensortag-js",
+  "keywords": ["bluetooth","ti sensortag"],
+  "targets": ["joule"],
+  "runtimes": ["node"]
+}
