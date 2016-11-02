@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
 
 	//Print out a hello world statement
 	//so that we know the program's running.
-	cout << "Hello from Intel on Grosse Tete!" << endl
+	cout << "Hello from Intel Joule!" << endl
 	<< "Press Ctrl+c to exit..." << endl;
 
 	//Create a PWM object. This 

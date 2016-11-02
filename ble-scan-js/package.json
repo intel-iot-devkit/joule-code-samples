@@ -1,7 +1,7 @@
 {
-  "name": "gt-demo",
+  "name": "joule-ble-demo",
   "version": "1.0.0",
-  "description": "GT demo using BLE and IBM Bluemix",
+  "description": "Joule demo using BLE and IBM Bluemix",
   "main": "index.js",
   "dependencies": {
     "async": "^2.0.1",
