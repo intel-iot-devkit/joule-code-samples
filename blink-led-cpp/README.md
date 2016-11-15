@@ -1,6 +1,6 @@
 ## How To Compile
 ```
-g++ -lmraa blink.cpp -o blink
+g++ blink.cpp -o blink -lmraa
 ```
 
 ## How To Run
