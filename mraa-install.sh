@@ -2,7 +2,7 @@
 #Installing Mraa
 
 clear
-echo "Beginning install!"
+echo "Beginning MRAA install!"
 sleep 1
 mkdir buildMraa
 cd buildMraa
@@ -39,5 +39,18 @@ rm -r /usr/lib64/
 cd ../../../
 rm -r buildMraa
 clear
-echo $'Install complete!\n'
+echo $'MRAA install complete!\n'
+echo $'Beginning UPM install!\n'
+git clone https://github.com/intel-iot-devkit/upm.git
+cd upm
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr -DBUILDEXAMPLES=ON
+make
+sudo make install
+cd ..
+cd ..
+rm -r upm
+echo $'UPM install complete!\n'
+clear
 mraa-gpio version
