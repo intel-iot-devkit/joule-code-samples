@@ -50,7 +50,7 @@ Now ensure to use the proper compiler flags when you attempt to compile this pro
 
 `g++ lesson_3.cpp -o lesson_3 -lmraa`
 
-Now run the program using the following command.
+Now run the program using the following command. Please also note that mraa library requires root privileges to run properly. So either check that you are logged in as user `root` (`whoami` command will tell you) or use `sudo` command to run this example.
 
 `./lesson_3`
 
