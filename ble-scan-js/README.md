@@ -36,6 +36,9 @@ Then plug in the LCD screen to the grove shield on the I2C connector closest to 
 ## Running the code
 You can launch this project from XDK (after first importing it from XDK IoT Edition), or run it directly on your device:
 
+When running directly on your device, please note that mraa library requires root privileges to run properly. So either
+check that you are logged in as user `root` (`whoami` command will tell you) or use `sudo` command to run this app.
+
 ```
 npm install
 node index.js
