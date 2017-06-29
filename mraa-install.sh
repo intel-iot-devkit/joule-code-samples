@@ -23,18 +23,17 @@ if [ "$checkCmake" = "0" ]; then #Have to install Cmake
 fi
 echo "CMake already installed, preparing to build Mraa."
 sleep 1
+#Remove previous version of Mraa
+rm /usr/lib/libmraa.so* 
+rm /usr/lib/pkgconfig/mraa.pc
+#Add new mraa version
 git clone https://github.com/intel-iot-devkit/mraa.git
 cd mraa
 mkdir build
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR=lib
 make
-make install #Should install Mraa in /usr/lib64/
-rm /usr/lib/libmraa.so* #Remove previous version of Mraa
-mv  /usr/lib64/libmraa.so* /usr/lib #Move NEW Mraa files to lib
-mv /usr/lib64/pkgconfig/* /usr/lib/pkgconfig #Move package configuration info
-rm -r /usr/lib64/
-
+make install #Should install Mraa in /usr/lib/
 #Cleanup
 cd ../../../
 rm -r buildMraa
